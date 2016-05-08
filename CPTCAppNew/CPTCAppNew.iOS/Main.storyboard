@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3504">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="2653">
+            <objects>
+                <viewController id="2654" sceneMemberID="viewController" customClass="MainViewController" storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2651"/>
+                        <viewControllerLayoutGuide type="bottom" id="2652"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="2655">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3791" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonInfo">
+                                <rect key="frame" x="48" y="103" width="90" height="90"/>
+                                <state key="normal" image="Images.xcassets/icon_info.imageset/icon_info.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="3889" destination="3821" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="4539" firstAttribute="width" constant="90"/>
+                                    <constraint id="4540" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3792" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonMap">
+                                <rect key="frame" x="255" y="103" width="90" height="90"/>
+                                <state key="normal" image="Images.xcassets/icon_map.imageset/icon_map.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="4014" destination="3944" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="4543" firstAttribute="width" constant="90"/>
+                                    <constraint id="4544" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3793" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonEvents" misplaced="YES">
+                                <rect key="frame" x="457" y="103" width="90" height="90"/>
+                                <state key="normal" image="Images.xcassets/icon_events.imageset/icon_events.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="4099" destination="4017" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="4547" firstAttribute="width" constant="90"/>
+                                    <constraint id="4548" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3794" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonEmail">
+                                <rect key="frame" x="48" y="255" width="90" height="90"/>
+                                <state key="normal" image="Images.xcassets/icon_email.imageset/icon_email.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="4174" destination="4104" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="4551" firstAttribute="width" constant="90"/>
+                                    <constraint id="4552" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3795" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonCanvas">
+                                <rect key="frame" x="255" y="255" width="90" height="90"/>
+                                <state key="normal" image="Images.xcassets/icon_canvas.imageset/canvas_icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="4417" destination="4387" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="4555" firstAttribute="width" constant="90"/>
+                                    <constraint id="4556" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3796" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                                <rect key="frame" x="457" y="255" width="90" height="90"/>
+                                <state key="normal" image="Images.xcassets/icon_settings.imageset/icon_settings.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="4501" destination="4427" kind="show"/>
+                                </connections>
+                                <constraints>
+                                    <constraint id="4559" firstAttribute="width" constant="90"/>
+                                    <constraint id="4560" firstAttribute="height" constant="90"/>
+                                </constraints>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3797" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="TableViewEvents">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4622" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4622" id="4623">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3897" translatesAutoresizingMaskIntoConstraints="NO" text="Information" restorationIdentifier="LabelInfo">
+                                <rect key="frame" x="59" y="201" width="68" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4563" firstAttribute="width" constant="68"/>
+                                    <constraint id="4564" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" lineBreakMode="tailTruncation" minimumFontSize="10" id="3898" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelMap">
+                                <rect key="frame" x="286" y="201" width="29" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4567" firstAttribute="width" constant="29"/>
+                                    <constraint id="4568" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Events" lineBreakMode="tailTruncation" minimumFontSize="10" id="3899" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelEvents" misplaced="YES">
+                                <rect key="frame" x="483" y="201" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4571" firstAttribute="width" constant="42"/>
+                                    <constraint id="4572" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="3900" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelEmail">
+                                <rect key="frame" x="77" y="353" width="32" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4575" firstAttribute="width" constant="32"/>
+                                    <constraint id="4576" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas" lineBreakMode="tailTruncation" minimumFontSize="10" id="3901" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelCanvas">
+                                <rect key="frame" x="280" y="353" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4579" firstAttribute="width" constant="42"/>
+                                    <constraint id="4580" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="3902" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelSettings" misplaced="YES">
+                                <rect key="frame" x="479" y="353" width="52" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="4583" firstAttribute="width" constant="52"/>
+                                    <constraint id="4584" firstAttribute="height" constant="21"/>
+                                </constraints>
+                            </label>
+                        </subviews>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" header="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint id="4537" firstItem="3791" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
+                            <constraint id="4538" firstItem="3791" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="103"/>
+                            <constraint id="4541" firstItem="2655" firstAttribute="trailing" secondItem="3792" secondAttribute="trailing" constant="255"/>
+                            <constraint id="4542" firstItem="3792" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="103"/>
+                            <constraint id="4545" firstItem="2655" firstAttribute="trailing" secondItem="3793" secondAttribute="trailing" constant="60"/>
+                            <constraint id="4546" firstItem="3793" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="103"/>
+                            <constraint id="4549" firstItem="3794" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
+                            <constraint id="4550" firstItem="2655" firstAttribute="bottom" secondItem="3794" secondAttribute="bottom" constant="255"/>
+                            <constraint id="4553" firstItem="2655" firstAttribute="trailing" secondItem="3795" secondAttribute="trailing" constant="255"/>
+                            <constraint id="4554" firstItem="2655" firstAttribute="bottom" secondItem="3795" secondAttribute="bottom" constant="255"/>
+                            <constraint id="4557" firstItem="2655" firstAttribute="trailing" secondItem="3796" secondAttribute="trailing" constant="60"/>
+                            <constraint id="4558" firstItem="2655" firstAttribute="bottom" secondItem="3796" secondAttribute="bottom" constant="255"/>
+                            <constraint id="4561" firstItem="3897" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="59"/>
+                            <constraint id="4562" firstItem="3897" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="201"/>
+                            <constraint id="4565" firstItem="2655" firstAttribute="trailing" secondItem="3898" secondAttribute="trailing" constant="285"/>
+                            <constraint id="4566" firstItem="3898" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="201"/>
+                            <constraint id="4569" firstItem="2655" firstAttribute="trailing" secondItem="3899" secondAttribute="trailing" constant="82"/>
+                            <constraint id="4570" firstItem="3899" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="201"/>
+                            <constraint id="4573" firstItem="3900" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="77"/>
+                            <constraint id="4574" firstItem="2655" firstAttribute="bottom" secondItem="3900" secondAttribute="bottom" constant="226"/>
+                            <constraint id="4577" firstItem="2655" firstAttribute="trailing" secondItem="3901" secondAttribute="trailing" constant="278"/>
+                            <constraint id="4578" firstItem="2655" firstAttribute="bottom" secondItem="3901" secondAttribute="bottom" constant="226"/>
+                            <constraint id="4581" firstItem="2655" firstAttribute="trailing" secondItem="3902" secondAttribute="trailing" constant="76"/>
+                            <constraint id="4582" firstItem="2655" firstAttribute="bottom" secondItem="3902" secondAttribute="bottom" constant="226"/>
+                        </constraints>
+                    </view>
+                    <navigationItem title="MyCPTC" id="3636" key="navigationItem"/>
+                    <connections>
+                        <outlet property="ButtonInfo" destination="3791" id="name-outlet-3791"/>
+                        <outlet property="ButtonMap" destination="3792" id="name-outlet-3792"/>
+                        <outlet property="ButtonEvents" destination="3793" id="name-outlet-3793"/>
+                        <outlet property="ButtonCanvas" destination="3795" id="name-outlet-3795"/>
+                        <outlet property="ButtonEmail" destination="3794" id="name-outlet-3794"/>
+                        <outlet property="TableViewEvents" destination="3797" id="name-outlet-3797"/>
+                        <outlet property="LabelInfo" destination="3897" id="name-outlet-3897"/>
+                        <outlet property="LabelEmail" destination="3900" id="name-outlet-3900"/>
+                        <outlet property="LabelEvents" destination="3899" id="name-outlet-3899"/>
+                        <outlet property="LabelMap" destination="3898" id="name-outlet-3898"/>
+                        <outlet property="LabelCanvas" destination="3901" id="name-outlet-3901"/>
+                        <outlet property="LabelSettings" destination="3902" id="name-outlet-3902"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2656" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="236" y="-11"/>
+        </scene>
+        <scene sceneID="3503">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="3504" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3507">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <rect key="frame" x="0.0" y="20" width="880" height="44"/>
+                    </navigationBar>
+                    <connections>
+                        <segue id="3637" destination="2654" kind="relationship" relationship="rootViewController"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3508" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-581" y="-9"/>
+        </scene>
+        <scene sceneID="3820">
+            <objects>
+                <tableViewController id="3821" sceneMemberID="viewController" customClass="InfoTableViewController" numberOfPrototypes="0" numberOfSections="0" restorationIdentifier="InfoTableViewController" useStoryboardIdentifierAsRestorationIdentifier="NO">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3822" customClass="InfoTableViewController" restorationIdentifier="InfoTableView" keyboardDismissMode="onDrag" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="3821" id="3823"/>
+                            <outlet property="delegate" destination="3821" id="3824"/>
+                        </connections>
+                        <color key="separatorColor" colorSpace="calibratedRGB" red="0.47058823529411764" green="0.015686274509803921" blue="0.92156862745098034" alpha="1"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3948" rowHeight="44">
+                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3948" id="3949">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3950" rowHeight="44">
+                                <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3950" id="3951">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3952" rowHeight="44">
+                                <rect key="frame" x="0.0" y="110" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3952" id="3953">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3954" rowHeight="44">
+                                <rect key="frame" x="0.0" y="154" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3954" id="3955">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" staticText="YES" link="YES"/>
+                        </accessibility>
+                    </tableView>
+                    <connections>
+                        <outlet property="InfoTableView" destination="3822" id="name-outlet-3822"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3827" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="-775"/>
+        </scene>
+        <scene sceneID="3943">
+            <objects>
+                <viewController id="3944" sceneMemberID="viewController" customClass="MapViewController" title="Lakewood Campus" useStoryboardIdentifierAsRestorationIdentifier="YES" storyboardIdentifier="MapViewLakewoodController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3941"/>
+                        <viewControllerLayoutGuide type="bottom" id="3942"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3945" restorationIdentifier="MapView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" id="4182" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="MapImageView" multipleTouchEnabled="YES">
+                                <rect key="frame" x="0.0" y="107" width="600" height="230"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="4183" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="MapViewLakewood" showsUserLocation="YES">
+                                <rect key="frame" x="0.0" y="336" width="600" height="264"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4184" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" buttonType="roundedRect">
+                                <rect key="frame" x="455" y="69" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="South Hill Map  &gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" button="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <segue id="4262" destination="4188" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="ButtonSHMap" destination="4184" id="name-outlet-4184"/>
+                        <outlet property="MapView" destination="3945" id="name-outlet-3945"/>
+                        <outlet property="MapImageView" destination="4182" id="name-outlet-4182"/>
+                        <outlet property="MapViewLakewood" destination="4183" id="name-outlet-4183"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3946" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1081" y="-70"/>
+        </scene>
+        <scene sceneID="4016">
+            <objects>
+                <tableViewController id="4017" sceneMemberID="viewController" customClass="EventsViewController" storyboardIdentifier="EventsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Upcoming Events">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="4018" restorationIdentifier="EventsTableView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4021" rowHeight="44">
+                                <rect key="frame" x="0.0" y="55.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4021" id="4022">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4025" rowHeight="44">
+                                <rect key="frame" x="0.0" y="99.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4025" id="4026">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4027" rowHeight="44">
+                                <rect key="frame" x="0.0" y="143.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4027" id="4028">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4029" rowHeight="44">
+                                <rect key="frame" x="0.0" y="187.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4029" id="4030">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="4017" id="4019"/>
+                            <outlet property="delegate" destination="4017" id="4020"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="EventsTableView" destination="4018" id="name-outlet-4018"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4023" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="651"/>
+        </scene>
+        <scene sceneID="4103">
+            <objects>
+                <viewController id="4104" sceneMemberID="viewController" customClass="EmailViewController" storyboardIdentifier="EmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Student Email">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4101"/>
+                        <viewControllerLayoutGuide type="bottom" id="4102"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4105">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Store your email address and password in the Settings page for quicker access to your CPTC email." lineBreakMode="wordWrap" minimumFontSize="10" id="4176" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2">
+                                <rect key="frame" x="20" y="78" width="560" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4177" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="56" y="206" width="51" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="@student.cptc.edu">
+                                <rect key="frame" x="124" y="202" width="283" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="26" y="262" width="81" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="********">
+                                <rect key="frame" x="124" y="258" width="283" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" autocorrectionType="no" secureTextEntry="YES"/>
+                            </textField>
+                            <webView contentMode="scaleToFill" id="4181" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="EmailWebView" multipleTouchEnabled="YES">
+                                <rect key="frame" x="0.0" y="364" width="600" height="236"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES" phoneNumber="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4383" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="26" y="304" width="554" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="TextFieldEmailPassword" destination="4180" id="name-outlet-4180"/>
+                        <outlet property="TextFieldStudentEmail" destination="4178" id="name-outlet-4178"/>
+                        <outlet property="EmailWebView" destination="4181" id="name-outlet-4181"/>
+                        <outlet property="ButtonEmailSubmit" destination="4383" id="name-outlet-4383"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4106" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082" y="1367"/>
+        </scene>
+        <scene sceneID="4187">
+            <objects>
+                <viewController id="4188" sceneMemberID="viewController" customClass="Map2ViewController" storyboardIdentifier="MapViewSHController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="South Hill Campus">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4185"/>
+                        <viewControllerLayoutGuide type="bottom" id="4186"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4189" restorationIdentifier="MapSHView" multipleTouchEnabled="YES">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                        </accessibility>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" id="4264" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="Map2ImageView" multipleTouchEnabled="YES">
+                                <rect key="frame" x="0.0" y="106" width="600" height="233"/>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="4265" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="MapViewSH" showsUserLocation="YES">
+                                <rect key="frame" x="0.0" y="340" width="600" height="260"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4266" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="ButtonLakewoodMap">
+                                <rect key="frame" x="430" y="68" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="&lt;  Lakewood Map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue id="4381" destination="3944" kind="show"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="MapSHView" destination="4189" id="name-outlet-4189"/>
+                        <outlet property="ButtonLakewoodMap" destination="4266" id="name-outlet-4266"/>
+                        <outlet property="Map2ImageView" destination="4264" id="name-outlet-4264"/>
+                        <outlet property="MapViewSH" destination="4265" id="name-outlet-4265"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4190" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="-69"/>
+        </scene>
+        <scene sceneID="4386">
+            <objects>
+                <viewController id="4387" sceneMemberID="viewController" customClass="CanvasViewController" storyboardIdentifier="CanvasViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="CPTC Canvas">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4384"/>
+                        <viewControllerLayoutGuide type="bottom" id="4385"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4388">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4419" fixedFrame="YES" animating="YES" hidesWhenStopped="YES">
+                                <rect key="frame" x="560" y="78" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <webView contentMode="scaleToFill" id="4420" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="CanvasWebView">
+                                <rect key="frame" x="0.0" y="116" width="600" height="340"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press the icon to open up Canvas in the App Store" lineBreakMode="tailTruncation" minimumFontSize="10" id="4421" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="492" width="392" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4422" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="ButtonCanvasIcon">
+                                <rect key="frame" x="490" y="490" width="90" height="90"/>
+                                <size key="titleShadowOffset" width="0" height="0"/>
+                                <state key="normal" image="Images.xcassets/icon_canvas.imageset/canvas_icon.png"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                </accessibility>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please enter your credentials to access Canvas by Instructure" lineBreakMode="tailTruncation" minimumFontSize="10" id="4423" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="LabelEnterCanvasCreds">
+                                <rect key="frame" x="20" y="78" width="560" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="ActivityCanvas" destination="4419" id="name-outlet-4419"/>
+                        <outlet property="LabelPressCanvasIcon" destination="4421" id="name-outlet-4421"/>
+                        <outlet property="ButtonCanvasIcon" destination="4422" id="name-outlet-4422"/>
+                        <outlet property="LabelEnterCanvasCreds" destination="4423" id="name-outlet-4423"/>
+                        <outlet property="CanvasWebView" destination="4420" id="name-outlet-4420"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4389" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="2094"/>
+        </scene>
+        <scene sceneID="4426">
+            <objects>
+                <viewController id="4427" sceneMemberID="viewController" customClass="SettingsViewController" storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Settings and Preferences">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4424"/>
+                        <viewControllerLayoutGuide type="bottom" id="4425"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4428" restorationIdentifier="SettingsView">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student Email:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4508" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="96" width="120" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4509" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="@student.cptc.edu">
+                                <rect key="frame" x="148" y="92" width="266" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4510" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="49" y="143" width="91" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4511" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="********" restorationIdentifier="TextFieldStudentEmailPassword">
+                                <rect key="frame" x="148" y="138" width="266" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" autocorrectionType="no" spellCheckingType="no"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student ID #:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4512" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="198" width="106" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4513" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="925123456">
+                                <rect key="frame" x="148" y="194" width="130" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4514" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="240" width="144" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4515" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="********">
+                                <rect key="frame" x="181" y="236" width="233" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Store map data locally:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4516" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="329" width="189" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4517" fixedFrame="YES">
+                                <rect key="frame" x="217" y="324" width="79" height="27"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enable CPTC theme:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4518" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="376" width="173" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4519" fixedFrame="YES">
+                                <rect key="frame" x="217" y="371" width="79" height="27"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enable notifications:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4522" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="423" width="159" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4523" fixedFrame="YES">
+                                <rect key="frame" x="217" y="418" width="79" height="27"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4525" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="20" y="492" width="560" height="45"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Reset Settings" id="4503" translatesAutoresizingMaskIntoConstraints="NO">
+                            <accessibilityConfiguration key="accessibilityConfiguration">
+                                <traits key="traits" staticText="YES" button="YES"/>
+                            </accessibilityConfiguration>
+                        </barButtonItem>
+                        <barButtonItem id="4504" translatesAutoresizingMaskIntoConstraints="NO" title="Forget Passwords"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="BarButtonReset" destination="4503" id="name-outlet-4503"/>
+                        <outlet property="LabelStudentEmail" destination="4508" id="name-outlet-4508"/>
+                        <outlet property="LabelStudentEmailPassword" destination="4510" id="name-outlet-4510"/>
+                        <outlet property="TextFieldStudentEmail" destination="4509" id="name-outlet-4509"/>
+                        <outlet property="TextFieldStudentEmailPassword" destination="4511" id="name-outlet-4511"/>
+                        <outlet property="TextFieldSid" destination="4513" id="name-outlet-4513"/>
+                        <outlet property="TextFieldCanvasPassword" destination="4515" id="name-outlet-4515"/>
+                        <outlet property="SettingsView" destination="4428" id="name-outlet-4428"/>
+                        <outlet property="LabelCanvasPassword" destination="4514" id="name-outlet-4514"/>
+                        <outlet property="LabelSid" destination="4512" id="name-outlet-4512"/>
+                        <outlet property="LabelStoreMapData" destination="4516" id="name-outlet-4516"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4429" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="2784"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_info.png" width="120" height="120"/>
+        <image name="canvas_icon.png" width="100" height="100"/>
+        <image name="cptcmountain.png" width="519.6667" height="222.333328"/>
+        <image name="icon_email.png" width="120" height="120"/>
+        <image name="icon_events.png" width="120" height="120"/>
+        <image name="icon_map.png" width="120" height="120"/>
+        <image name="icon_programs.png" width="120" height="120"/>
+        <image name="icon_settings.png" width="120" height="120"/>
+        <image name="simon.png" width="178" height="168.333328"/>
+        <image name="simonfull.png" width="400" height="690"/>
+        <image name="icon_info" width="120" height="120"/>
+        <image name="Image" width="120" height="120"/>
+        <image name="Image-1" width="120" height="120"/>
+        <image name="Image-2" width="120" height="120"/>
+        <image name="Image-3" width="100" height="100"/>
+        <image name="Image-4" width="120" height="120"/>
+        <image name="Image-5" width="120" height="120"/>
+        <image name="Image-6" width="519.6667" height="222.333328"/>
+        <image name="Image-7" width="120" height="120"/>
+        <image name="Image-8" width="178" height="168.333328"/>
+        <image name="Image-9" width="400" height="690"/>
+        <image name="cptc_canvas" width="120" height="120"/>
+        <image name="cptcmountain" width="519.6667" height="222.333328"/>
+        <image name="icon_canvas" width="100" height="100"/>
+        <image name="icon_email" width="120" height="120"/>
+        <image name="icon_events" width="120" height="120"/>
+        <image name="icon_map" width="120" height="120"/>
+        <image name="icon_programs" width="120" height="120"/>
+        <image name="icon_settings" width="120" height="120"/>
+        <image name="simon" width="178" height="168.333328"/>
+        <image name="simon_full" width="400" height="690"/>
+        <image name="Images.xcassets/cptc_canvas.imageset/icon_canvas.png" width="120" height="120"/>
+        <image name="Images.xcassets/cptcmountain.imageset/cptcmountain.png" width="519.6667" height="222.333328"/>
+        <image name="Images.xcassets/icon_canvas.imageset/canvas_icon.png" width="100" height="100"/>
+        <image name="Images.xcassets/icon_email.imageset/icon_email.png" width="120" height="120"/>
+        <image name="Images.xcassets/icon_events.imageset/icon_events.png" width="120" height="120"/>
+        <image name="Images.xcassets/icon_info.imageset/icon_info.png" width="120" height="120"/>
+        <image name="Images.xcassets/icon_map.imageset/icon_map.png" width="120" height="120"/>
+        <image name="Images.xcassets/icon_programs.imageset/icon_programs.png" width="120" height="120"/>
+        <image name="Images.xcassets/icon_settings.imageset/icon_settings.png" width="120" height="120"/>
+        <image name="Images.xcassets/simon.imageset/simon.png" width="178" height="168.333328"/>
+        <image name="Images.xcassets/simon_full.imageset/simonfull.png" width="400" height="690"/>
+    </resources>
+</document>
