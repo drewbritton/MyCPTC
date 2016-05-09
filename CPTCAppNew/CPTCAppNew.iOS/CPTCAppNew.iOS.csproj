@@ -266,10 +266,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="InfoTableViewController.cs" />
-    <Compile Include="InfoTableViewController.designer.cs">
-      <DependentUpon>InfoTableViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="MapViewController.cs" />
     <Compile Include="MapViewController.designer.cs">
       <DependentUpon>MapViewController.cs</DependentUpon>
@@ -297,6 +293,18 @@
     <Compile Include="MainViewController_.cs" />
     <Compile Include="MainViewController_.designer.cs">
       <DependentUpon>MainViewController_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoTabViewController.cs" />
+    <Compile Include="InfoTabViewController.designer.cs">
+      <DependentUpon>InfoTabViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralInfoViewController.cs" />
+    <Compile Include="GeneralInfoViewController.designer.cs">
+      <DependentUpon>GeneralInfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramsInfoViewController.cs" />
+    <Compile Include="ProgramsInfoViewController.designer.cs">
+      <DependentUpon>ProgramsInfoViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

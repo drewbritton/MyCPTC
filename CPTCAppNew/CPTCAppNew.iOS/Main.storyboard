@@ -17,25 +17,21 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3791" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonInfo">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3791" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonInfo" misplaced="YES">
                                 <rect key="frame" x="48" y="103" width="90" height="90"/>
-                                <state key="normal" image="Images.xcassets/icon_info.imageset/icon_info.png">
+                                <state key="normal" image="icon_info">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
                                 </accessibility>
                                 <connections>
-                                    <segue id="3889" destination="3821" kind="show"/>
+                                    <segue id="4751" destination="4653" kind="show"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="4539" firstAttribute="width" constant="90"/>
-                                    <constraint id="4540" firstAttribute="height" constant="90"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3792" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonMap">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3792" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonMap" fixedFrame="YES">
                                 <rect key="frame" x="255" y="103" width="90" height="90"/>
-                                <state key="normal" image="Images.xcassets/icon_map.imageset/icon_map.png">
+                                <state key="normal" image="icon_map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <accessibility key="accessibilityConfiguration">
@@ -44,14 +40,10 @@
                                 <connections>
                                     <segue id="4014" destination="3944" kind="show"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="4543" firstAttribute="width" constant="90"/>
-                                    <constraint id="4544" firstAttribute="height" constant="90"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3793" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonEvents" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3793" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonEvents" fixedFrame="YES">
                                 <rect key="frame" x="457" y="103" width="90" height="90"/>
-                                <state key="normal" image="Images.xcassets/icon_events.imageset/icon_events.png">
+                                <state key="normal" image="icon_events">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <accessibility key="accessibilityConfiguration">
@@ -60,14 +52,10 @@
                                 <connections>
                                     <segue id="4099" destination="4017" kind="show"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="4547" firstAttribute="width" constant="90"/>
-                                    <constraint id="4548" firstAttribute="height" constant="90"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3794" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonEmail">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3794" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonEmail" fixedFrame="YES">
                                 <rect key="frame" x="48" y="255" width="90" height="90"/>
-                                <state key="normal" image="Images.xcassets/icon_email.imageset/icon_email.png">
+                                <state key="normal" image="icon_email">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <accessibility key="accessibilityConfiguration">
@@ -76,14 +64,10 @@
                                 <connections>
                                     <segue id="4174" destination="4104" kind="show"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="4551" firstAttribute="width" constant="90"/>
-                                    <constraint id="4552" firstAttribute="height" constant="90"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3795" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonCanvas">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3795" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonCanvas" fixedFrame="YES">
                                 <rect key="frame" x="255" y="255" width="90" height="90"/>
-                                <state key="normal" image="Images.xcassets/icon_canvas.imageset/canvas_icon.png">
+                                <state key="normal" image="icon_canvas">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <accessibility key="accessibilityConfiguration">
@@ -92,14 +76,10 @@
                                 <connections>
                                     <segue id="4417" destination="4387" kind="show"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="4555" firstAttribute="width" constant="90"/>
-                                    <constraint id="4556" firstAttribute="height" constant="90"/>
-                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3796" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3796" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="457" y="255" width="90" height="90"/>
-                                <state key="normal" image="Images.xcassets/icon_settings.imageset/icon_settings.png">
+                                <state key="normal" image="icon_settings">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <accessibility key="accessibilityConfiguration">
@@ -108,10 +88,6 @@
                                 <connections>
                                     <segue id="4501" destination="4427" kind="show"/>
                                 </connections>
-                                <constraints>
-                                    <constraint id="4559" firstAttribute="width" constant="90"/>
-                                    <constraint id="4560" firstAttribute="height" constant="90"/>
-                                </constraints>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3797" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="TableViewEvents">
                                 <rect key="frame" x="0.0" y="400" width="600" height="200"/>
@@ -127,101 +103,55 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3897" translatesAutoresizingMaskIntoConstraints="NO" text="Information" restorationIdentifier="LabelInfo">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" lineBreakMode="tailTruncation" minimumFontSize="10" id="3897" translatesAutoresizingMaskIntoConstraints="NO" text="Information" restorationIdentifier="LabelInfo" fixedFrame="YES">
                                 <rect key="frame" x="59" y="201" width="68" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="4563" firstAttribute="width" constant="68"/>
-                                    <constraint id="4564" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" lineBreakMode="tailTruncation" minimumFontSize="10" id="3898" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelMap">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" lineBreakMode="tailTruncation" minimumFontSize="10" id="3898" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelMap" fixedFrame="YES">
                                 <rect key="frame" x="286" y="201" width="29" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="4567" firstAttribute="width" constant="29"/>
-                                    <constraint id="4568" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Events" lineBreakMode="tailTruncation" minimumFontSize="10" id="3899" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelEvents" misplaced="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Events" lineBreakMode="tailTruncation" minimumFontSize="10" id="3899" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelEvents" fixedFrame="YES">
                                 <rect key="frame" x="483" y="201" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="4571" firstAttribute="width" constant="42"/>
-                                    <constraint id="4572" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="3900" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelEmail">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="3900" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelEmail" fixedFrame="YES">
                                 <rect key="frame" x="77" y="353" width="32" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="4575" firstAttribute="width" constant="32"/>
-                                    <constraint id="4576" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas" lineBreakMode="tailTruncation" minimumFontSize="10" id="3901" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelCanvas">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas" lineBreakMode="tailTruncation" minimumFontSize="10" id="3901" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelCanvas" fixedFrame="YES">
                                 <rect key="frame" x="280" y="353" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="4579" firstAttribute="width" constant="42"/>
-                                    <constraint id="4580" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="3902" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelSettings" misplaced="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="3902" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="LabelSettings" fixedFrame="YES">
                                 <rect key="frame" x="479" y="353" width="52" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
                                 <nil key="highlightedColor"/>
-                                <constraints>
-                                    <constraint id="4583" firstAttribute="width" constant="52"/>
-                                    <constraint id="4584" firstAttribute="height" constant="21"/>
-                                </constraints>
                             </label>
                         </subviews>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" none="YES" header="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint id="4537" firstItem="3791" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
-                            <constraint id="4538" firstItem="3791" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="103"/>
-                            <constraint id="4541" firstItem="2655" firstAttribute="trailing" secondItem="3792" secondAttribute="trailing" constant="255"/>
-                            <constraint id="4542" firstItem="3792" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="103"/>
-                            <constraint id="4545" firstItem="2655" firstAttribute="trailing" secondItem="3793" secondAttribute="trailing" constant="60"/>
-                            <constraint id="4546" firstItem="3793" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="103"/>
-                            <constraint id="4549" firstItem="3794" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
-                            <constraint id="4550" firstItem="2655" firstAttribute="bottom" secondItem="3794" secondAttribute="bottom" constant="255"/>
-                            <constraint id="4553" firstItem="2655" firstAttribute="trailing" secondItem="3795" secondAttribute="trailing" constant="255"/>
-                            <constraint id="4554" firstItem="2655" firstAttribute="bottom" secondItem="3795" secondAttribute="bottom" constant="255"/>
-                            <constraint id="4557" firstItem="2655" firstAttribute="trailing" secondItem="3796" secondAttribute="trailing" constant="60"/>
-                            <constraint id="4558" firstItem="2655" firstAttribute="bottom" secondItem="3796" secondAttribute="bottom" constant="255"/>
-                            <constraint id="4561" firstItem="3897" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="59"/>
-                            <constraint id="4562" firstItem="3897" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="201"/>
-                            <constraint id="4565" firstItem="2655" firstAttribute="trailing" secondItem="3898" secondAttribute="trailing" constant="285"/>
-                            <constraint id="4566" firstItem="3898" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="201"/>
-                            <constraint id="4569" firstItem="2655" firstAttribute="trailing" secondItem="3899" secondAttribute="trailing" constant="82"/>
-                            <constraint id="4570" firstItem="3899" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="201"/>
-                            <constraint id="4573" firstItem="3900" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="77"/>
-                            <constraint id="4574" firstItem="2655" firstAttribute="bottom" secondItem="3900" secondAttribute="bottom" constant="226"/>
-                            <constraint id="4577" firstItem="2655" firstAttribute="trailing" secondItem="3901" secondAttribute="trailing" constant="278"/>
-                            <constraint id="4578" firstItem="2655" firstAttribute="bottom" secondItem="3901" secondAttribute="bottom" constant="226"/>
-                            <constraint id="4581" firstItem="2655" firstAttribute="trailing" secondItem="3902" secondAttribute="trailing" constant="76"/>
-                            <constraint id="4582" firstItem="2655" firstAttribute="bottom" secondItem="3902" secondAttribute="bottom" constant="226"/>
+                            <constraint id="4635" firstItem="3791" firstAttribute="top" secondItem="2651" secondAttribute="bottom" constant="39"/>
+                            <constraint id="4636" firstItem="3791" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
                         </constraints>
                     </view>
                     <navigationItem title="MyCPTC" id="3636" key="navigationItem"/>
@@ -258,64 +188,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3508" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-581" y="-9"/>
-        </scene>
-        <scene sceneID="3820">
-            <objects>
-                <tableViewController id="3821" sceneMemberID="viewController" customClass="InfoTableViewController" numberOfPrototypes="0" numberOfSections="0" restorationIdentifier="InfoTableViewController" useStoryboardIdentifierAsRestorationIdentifier="NO">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3822" customClass="InfoTableViewController" restorationIdentifier="InfoTableView" keyboardDismissMode="onDrag" useStoryboardIdentifierAsRestorationIdentifier="YES">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="3821" id="3823"/>
-                            <outlet property="delegate" destination="3821" id="3824"/>
-                        </connections>
-                        <color key="separatorColor" colorSpace="calibratedRGB" red="0.47058823529411764" green="0.015686274509803921" blue="0.92156862745098034" alpha="1"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3948" rowHeight="44">
-                                <rect key="frame" x="0.0" y="22" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3948" id="3949">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3950" rowHeight="44">
-                                <rect key="frame" x="0.0" y="66" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3950" id="3951">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3952" rowHeight="44">
-                                <rect key="frame" x="0.0" y="110" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3952" id="3953">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3954" rowHeight="44">
-                                <rect key="frame" x="0.0" y="154" width="600" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3954" id="3955">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" none="YES" staticText="YES" link="YES"/>
-                        </accessibility>
-                    </tableView>
-                    <connections>
-                        <outlet property="InfoTableView" destination="3822" id="name-outlet-3822"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3827" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1088" y="-775"/>
         </scene>
         <scene sceneID="3943">
             <objects>
@@ -513,21 +385,10 @@
                                     <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
                                 </accessibility>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4266" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="ButtonLakewoodMap">
-                                <rect key="frame" x="430" y="68" width="150" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="&lt;  Lakewood Map">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue id="4381" destination="3944" kind="show"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="MapSHView" destination="4189" id="name-outlet-4189"/>
-                        <outlet property="ButtonLakewoodMap" destination="4266" id="name-outlet-4266"/>
                         <outlet property="Map2ImageView" destination="4264" id="name-outlet-4264"/>
                         <outlet property="MapViewSH" destination="4265" id="name-outlet-4265"/>
                     </connections>
@@ -716,6 +577,147 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4429" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1088" y="2784"/>
+        </scene>
+        <scene sceneID="4652">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="4653" sceneMemberID="viewController" customClass="InfoTabViewController" storyboardIdentifier="InfoTabView" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Information">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4658" translucent="YES">
+                        <rect key="frame" x="0.0" y="551" width="600" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4655" kind="relationship" relationship="viewControllers" id="4654"/>
+                        <segue destination="4657" kind="relationship" relationship="viewControllers" id="4656"/>
+                        <outlet property="InfoTabBar" destination="4658" id="name-outlet-4658"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4659" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="-1036"/>
+        </scene>
+        <scene sceneID="4660">
+            <objects>
+                <viewController id="4655" sceneMemberID="viewController" customClass="GeneralInfoViewController" storyboardIdentifier="GeneralInfoView" useStoryboardIdentifierAsRestorationIdentifier="YES" title="General Information">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4648"/>
+                        <viewControllerLayoutGuide type="bottom" id="4649"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4661">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4760" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="67" width="600" height="483"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4761" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4762" tableViewCell="4761">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4763" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4764" tableViewCell="4763">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4765" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="110" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4766" tableViewCell="4765">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="4662" title="General Info" tag="0">
+                        <accessibilityConfiguration key="accessibilityConfiguration">
+                            <traits key="traits" image="YES" button="YES" staticText="YES"/>
+                        </accessibilityConfiguration>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="GeneralInfoTab" destination="4662" id="name-outlet-4662"/>
+                        <outlet property="GeneralInfoTableView" destination="4760" id="name-outlet-4760"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4663" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1912" y="-1527"/>
+        </scene>
+        <scene sceneID="4664">
+            <objects>
+                <viewController id="4657" sceneMemberID="viewController" customClass="ProgramsInfoViewController" storyboardIdentifier="ProgramsInfoView" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Programs and Certificates">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4650"/>
+                        <viewControllerLayoutGuide type="bottom" id="4651"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4665">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4753" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="0.0" y="66" width="600" height="484"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4754" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4755" tableViewCell="4754">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4756" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4757" tableViewCell="4756">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4758" rowHeight="44">
+                                        <rect key="frame" x="0.0" y="110" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4759" tableViewCell="4758">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                    </view>
+                    <tabBarItem key="tabBarItem" id="4666" selectedImage="icon_programs" title="Programs">
+                        <accessibilityConfiguration key="accessibilityConfiguration">
+                            <traits key="traits" image="YES"/>
+                        </accessibilityConfiguration>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="ProgramsTab" destination="4666" id="name-outlet-4666"/>
+                        <outlet property="ProgramsTableView" destination="4753" id="name-outlet-4753"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4667" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915" y="-825"/>
         </scene>
     </scenes>
     <resources>

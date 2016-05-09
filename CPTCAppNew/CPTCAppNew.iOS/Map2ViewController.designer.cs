@@ -16,10 +16,6 @@ namespace CPTCAppNew.iOS
 	{
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UIButton ButtonLakewoodMap { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UIImageView Map2ImageView { get; set; }
 
 		[Outlet]
@@ -32,10 +28,6 @@ namespace CPTCAppNew.iOS
 
 		void ReleaseDesignerOutlets ()
 		{
-			if (ButtonLakewoodMap != null) {
-				ButtonLakewoodMap.Dispose ();
-				ButtonLakewoodMap = null;
-			}
 			if (Map2ImageView != null) {
 				Map2ImageView.Dispose ();
 				Map2ImageView = null;
