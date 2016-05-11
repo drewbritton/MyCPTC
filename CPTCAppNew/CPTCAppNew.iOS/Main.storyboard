@@ -37,6 +37,7 @@
                                     <segue destination="4653" kind="show" id="4751"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" restorationIdentifier="ButtonMap" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3792">
                                 <rect key="frame" x="256" y="103" width="90" height="90"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -46,6 +47,10 @@
                                     <constraint firstAttribute="height" constant="90" id="i5h-VQ-yN5"/>
                                     <constraint firstAttribute="width" constant="90" id="nas-vR-CfE"/>
                                 </constraints>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3792" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonMap" misplaced="YES">
+                                <rect key="frame" x="255" y="103" width="90" height="90"/>
+>>>>>>> 3f0df5b... random message
                                 <state key="normal" image="icon_map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -185,6 +190,7 @@
                             <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES" header="YES"/>
                         </accessibility>
                         <constraints>
+<<<<<<< HEAD
                             <constraint firstItem="3898" firstAttribute="baseline" secondItem="3897" secondAttribute="baseline" id="051-2K-yru"/>
                             <constraint firstItem="3795" firstAttribute="centerX" secondItem="2655" secondAttribute="centerX" id="0aZ-Yd-K2p"/>
                             <constraint firstAttribute="trailing" secondItem="3797" secondAttribute="trailing" id="1Pw-SG-UX7"/>
@@ -223,6 +229,11 @@
                             <constraint firstItem="3794" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="15" id="v37-jv-25F"/>
                             <constraint firstItem="3898" firstAttribute="leading" secondItem="3792" secondAttribute="leading" id="x7w-f9-h53"/>
                             <constraint firstItem="3898" firstAttribute="trailing" secondItem="3792" secondAttribute="trailing" id="zu3-W5-Lt6"/>
+=======
+                            <constraint id="4635" firstItem="3791" firstAttribute="top" secondItem="2651" secondAttribute="bottom" constant="39"/>
+                            <constraint id="4636" firstItem="3791" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
+                            <constraint id="4780" firstItem="3791" firstAttribute="centerY" secondItem="3792" secondAttribute="centerY"/>
+>>>>>>> 3f0df5b... random message
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="MyCPTC" id="3636"/>
