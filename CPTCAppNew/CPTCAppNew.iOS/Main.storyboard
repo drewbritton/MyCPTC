@@ -29,7 +29,7 @@
                                     <segue id="4751" destination="4653" kind="show"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3792" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonMap" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3792" translatesAutoresizingMaskIntoConstraints="NO" restorationIdentifier="ButtonMap" misplaced="YES">
                                 <rect key="frame" x="255" y="103" width="90" height="90"/>
                                 <state key="normal" image="icon_map">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -152,6 +152,7 @@
                         <constraints>
                             <constraint id="4635" firstItem="3791" firstAttribute="top" secondItem="2651" secondAttribute="bottom" constant="39"/>
                             <constraint id="4636" firstItem="3791" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="48"/>
+                            <constraint id="4780" firstItem="3791" firstAttribute="centerY" secondItem="3792" secondAttribute="centerY"/>
                         </constraints>
                     </view>
                     <navigationItem title="MyCPTC" id="3636" key="navigationItem"/>
