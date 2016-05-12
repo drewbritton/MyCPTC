@@ -36,6 +36,10 @@ namespace CPTCAppNew.iOS
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView HomeView { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel LabelCanvas { get; set; }
 
 		[Outlet]
@@ -62,6 +66,10 @@ namespace CPTCAppNew.iOS
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITableView TableViewEvents { get; set; }
 
+		[Action ("ButtonInfo_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void ButtonInfo_TouchUpInside (UIButton sender);
+
 		void ReleaseDesignerOutlets ()
 		{
 			if (ButtonCanvas != null) {
@@ -83,6 +91,10 @@ namespace CPTCAppNew.iOS
 			if (ButtonMap != null) {
 				ButtonMap.Dispose ();
 				ButtonMap = null;
+			}
+			if (HomeView != null) {
+				HomeView.Dispose ();
+				HomeView = null;
 			}
 			if (LabelCanvas != null) {
 				LabelCanvas.Dispose ();

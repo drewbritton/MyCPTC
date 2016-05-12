@@ -306,6 +306,10 @@
     <Compile Include="ProgramsInfoViewController.designer.cs">
       <DependentUpon>ProgramsInfoViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="TestViewController.cs" />
+    <Compile Include="TestViewController.designer.cs">
+      <DependentUpon>TestViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
