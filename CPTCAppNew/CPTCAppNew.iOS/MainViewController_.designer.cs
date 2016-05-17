@@ -56,11 +56,31 @@ namespace CPTCAppNew.iOS
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel LabelSettings { get; set; }
+		UITableView TableViewEvents { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UITableView TableViewEvents { get; set; }
+		UIView ViewCanvas { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView ViewEmail { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView ViewEvents { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView ViewInfo { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView ViewMap { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIView ViewSettings { get; set; }
 
 		void ReleaseDesignerOutlets ()
 		{
@@ -104,13 +124,33 @@ namespace CPTCAppNew.iOS
 				LabelMap.Dispose ();
 				LabelMap = null;
 			}
-			if (LabelSettings != null) {
-				LabelSettings.Dispose ();
-				LabelSettings = null;
-			}
 			if (TableViewEvents != null) {
 				TableViewEvents.Dispose ();
 				TableViewEvents = null;
+			}
+			if (ViewCanvas != null) {
+				ViewCanvas.Dispose ();
+				ViewCanvas = null;
+			}
+			if (ViewEmail != null) {
+				ViewEmail.Dispose ();
+				ViewEmail = null;
+			}
+			if (ViewEvents != null) {
+				ViewEvents.Dispose ();
+				ViewEvents = null;
+			}
+			if (ViewInfo != null) {
+				ViewInfo.Dispose ();
+				ViewInfo = null;
+			}
+			if (ViewMap != null) {
+				ViewMap.Dispose ();
+				ViewMap = null;
+			}
+			if (ViewSettings != null) {
+				ViewSettings.Dispose ();
+				ViewSettings = null;
 			}
 		}
 	}
