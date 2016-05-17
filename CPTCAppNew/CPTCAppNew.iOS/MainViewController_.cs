@@ -13,10 +13,16 @@ namespace CPTCAppNew.iOS {
 
         public override void ViewDidLoad() {
             base.ViewDidLoad();
+
+			ButtonInfo.TranslatesAutoresizingMaskIntoConstraints = false;
         }
 
         public override void DidReceiveMemoryWarning() {
             base.DidReceiveMemoryWarning();
         }
+
+		partial void ButtonInfo_TouchUpInside(UIButton sender) {
+			ButtonInfo.TranslatesAutoresizingMaskIntoConstraints = false;
+		}
     }
 }

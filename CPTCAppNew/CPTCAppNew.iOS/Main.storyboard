@@ -1,395 +1,250 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3504">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4964">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MyCPTC-->
         <scene sceneID="2653">
             <objects>
-                <viewController id="2654" sceneMemberID="viewController" customClass="MainViewController" storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES">
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2654" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2651"/>
                         <viewControllerLayoutGuide type="bottom" id="2652"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleAspectFit" id="2655">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="HomeView" id="2655">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" customColorSpace="calibratedWhite" colorSpace="calibratedWhite" white="0.333333333333333" alpha="1"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3797" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="TableViewEvents">
-                                <rect key="frame" x="0.0" y="420" width="600" height="152"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="ButtonInfo" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3791">
+                                <rect key="frame" x="20" y="103" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="icon_info">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="103" width="60" height="60"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ButtonInfo_TouchUpInside:" destination="2654" eventType="touchUpInside" id="4907"/>
+                                    <segue destination="4653" kind="show" id="4751"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="ButtonMap" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3792">
+                                <rect key="frame" x="256" y="103" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="icon_map">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3944" kind="show" id="4014"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="ButtonEvents" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3793">
+                                <rect key="frame" x="490" y="103" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="icon_events">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4017" kind="show" id="4099"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="ButtonEmail" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3794">
+                                <rect key="frame" x="20" y="255" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="icon_email">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4104" kind="show" id="4174"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" restorationIdentifier="ButtonCanvas" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3795">
+                                <rect key="frame" x="256" y="255" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="icon_canvas">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4387" kind="show" id="4417"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3796">
+                                <rect key="frame" x="490" y="255" width="90" height="90"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" image="icon_settings">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4427" kind="show" id="4501"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TableViewEvents" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3797">
+                                <rect key="frame" x="0.0" y="400" width="600" height="200"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="4947"/>
+                                    <constraint firstAttribute="height" constant="200" id="4948"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4622" rowHeight="44">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="4622">
                                         <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4622" id="4623">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" id="4784" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="87" width="120" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4793" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="icon_info.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint id="4820" firstAttribute="width" constant="90"/>
-                                            <constraint id="4821" firstAttribute="height" constant="90"/>
-                                        </constraints>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Information" lineBreakMode="tailTruncation" minimumFontSize="10" id="4794" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
-                                        <rect key="frame" x="15" y="98" width="85" height="21"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <constraints>
-                                            <constraint id="4824" firstAttribute="width" constant="85"/>
-                                            <constraint id="4825" firstAttribute="height" constant="21"/>
-                                        </constraints>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint id="4816" firstAttribute="width" constant="120"/>
-                                    <constraint id="4817" firstAttribute="height" constant="120"/>
-                                    <constraint id="4818" firstItem="4793" firstAttribute="top" secondItem="4784" secondAttribute="top"/>
-                                    <constraint id="4819" firstItem="4793" firstAttribute="leading" secondItem="4784" secondAttribute="leading" constant="15"/>
-                                    <constraint id="4822" firstItem="4784" firstAttribute="bottom" secondItem="4794" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="4823" firstItem="4794" firstAttribute="leading" secondItem="4784" secondAttribute="leading" constant="15"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" id="4785" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="240" y="87" width="120" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4795" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="icon_map.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint id="4832" firstAttribute="width" constant="90"/>
-                                            <constraint id="4833" firstAttribute="height" constant="90"/>
-                                        </constraints>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" lineBreakMode="tailTruncation" minimumFontSize="10" id="4798" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
-                                        <rect key="frame" x="20" y="98" width="80" height="21"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <constraints>
-                                            <constraint id="4836" firstAttribute="width" constant="80"/>
-                                            <constraint id="4837" firstAttribute="height" constant="21"/>
-                                        </constraints>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint id="4828" firstAttribute="width" constant="120"/>
-                                    <constraint id="4829" firstAttribute="height" constant="120"/>
-                                    <constraint id="4830" firstItem="4795" firstAttribute="top" secondItem="4785" secondAttribute="top"/>
-                                    <constraint id="4831" firstItem="4795" firstAttribute="leading" secondItem="4785" secondAttribute="leading" constant="15"/>
-                                    <constraint id="4834" firstItem="4785" firstAttribute="bottom" secondItem="4798" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="4835" firstItem="4798" firstAttribute="leading" secondItem="4785" secondAttribute="leading" constant="20"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" id="4786" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="460" y="87" width="120" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" id="4787" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                        <rect key="frame" x="480" y="107" width="120" height="120"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint id="4844" firstAttribute="width" constant="120"/>
-                                            <constraint id="4845" firstAttribute="height" constant="120"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" id="4788" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                        <rect key="frame" x="480" y="107" width="120" height="120"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" id="4789" translatesAutoresizingMaskIntoConstraints="NO" misplaced="YES">
-                                                <rect key="frame" x="480" y="107" width="120" height="120"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint id="4852" firstAttribute="width" constant="120"/>
-                                                    <constraint id="4853" firstAttribute="height" constant="120"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint id="4848" firstAttribute="width" constant="120"/>
-                                            <constraint id="4849" firstAttribute="height" constant="120"/>
-                                            <constraint id="4850" firstItem="4788" firstAttribute="bottom" secondItem="4789" secondAttribute="bottom" constant="-107"/>
-                                            <constraint id="4851" firstItem="4788" firstAttribute="trailing" secondItem="4789" secondAttribute="trailing"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4799" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="icon_events.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint id="4856" firstAttribute="width" constant="90"/>
-                                            <constraint id="4857" firstAttribute="height" constant="90"/>
-                                        </constraints>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Events" lineBreakMode="tailTruncation" minimumFontSize="10" id="4800" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
-                                        <rect key="frame" x="20" y="98" width="80" height="21"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <constraints>
-                                            <constraint id="4860" firstAttribute="width" constant="80"/>
-                                            <constraint id="4861" firstAttribute="height" constant="21"/>
-                                        </constraints>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint id="4840" firstAttribute="width" constant="120"/>
-                                    <constraint id="4841" firstAttribute="height" constant="120"/>
-                                    <constraint id="4842" firstItem="4786" firstAttribute="bottom" secondItem="4787" secondAttribute="bottom" constant="-107"/>
-                                    <constraint id="4843" firstItem="4786" firstAttribute="trailing" secondItem="4787" secondAttribute="trailing" constant="-20"/>
-                                    <constraint id="4846" firstItem="4786" firstAttribute="bottom" secondItem="4788" secondAttribute="bottom" constant="-107"/>
-                                    <constraint id="4847" firstItem="4786" firstAttribute="trailing" secondItem="4788" secondAttribute="trailing" constant="-20"/>
-                                    <constraint id="4854" firstItem="4799" firstAttribute="top" secondItem="4786" secondAttribute="top"/>
-                                    <constraint id="4855" firstItem="4799" firstAttribute="leading" secondItem="4786" secondAttribute="leading" constant="15"/>
-                                    <constraint id="4858" firstItem="4786" firstAttribute="bottom" secondItem="4800" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="4859" firstItem="4800" firstAttribute="leading" secondItem="4786" secondAttribute="leading" constant="20"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" id="4790" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="261" width="120" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4801" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="icon_email.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint id="4868" firstAttribute="width" constant="90"/>
-                                            <constraint id="4869" firstAttribute="height" constant="90"/>
-                                        </constraints>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" id="4802" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
-                                        <rect key="frame" x="20" y="98" width="80" height="21"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <constraints>
-                                            <constraint id="4872" firstAttribute="width" constant="80"/>
-                                            <constraint id="4873" firstAttribute="height" constant="21"/>
-                                        </constraints>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint id="4864" firstAttribute="width" constant="120"/>
-                                    <constraint id="4865" firstAttribute="height" constant="120"/>
-                                    <constraint id="4866" firstItem="4801" firstAttribute="top" secondItem="4790" secondAttribute="top"/>
-                                    <constraint id="4867" firstItem="4801" firstAttribute="leading" secondItem="4790" secondAttribute="leading" constant="15"/>
-                                    <constraint id="4870" firstItem="4790" firstAttribute="bottom" secondItem="4802" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="4871" firstItem="4802" firstAttribute="leading" secondItem="4790" secondAttribute="leading" constant="20"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" id="4791" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="240" y="261" width="120" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4803" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="icon_canvas.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint id="4880" firstAttribute="width" constant="90"/>
-                                            <constraint id="4881" firstAttribute="height" constant="90"/>
-                                        </constraints>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas" lineBreakMode="tailTruncation" minimumFontSize="10" id="4804" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
-                                        <rect key="frame" x="20" y="98" width="80" height="21"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <constraints>
-                                            <constraint id="4884" firstAttribute="width" constant="80"/>
-                                            <constraint id="4885" firstAttribute="height" constant="21"/>
-                                        </constraints>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint id="4876" firstAttribute="width" constant="120"/>
-                                    <constraint id="4877" firstAttribute="height" constant="120"/>
-                                    <constraint id="4878" firstItem="4803" firstAttribute="top" secondItem="4791" secondAttribute="top"/>
-                                    <constraint id="4879" firstItem="4803" firstAttribute="leading" secondItem="4791" secondAttribute="leading" constant="15"/>
-                                    <constraint id="4882" firstItem="4791" firstAttribute="bottom" secondItem="4804" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="4883" firstItem="4804" firstAttribute="leading" secondItem="4791" secondAttribute="leading" constant="20"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" id="4792" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="460" y="261" width="120" height="120"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4805" translatesAutoresizingMaskIntoConstraints="NO">
-                                        <rect key="frame" x="15" y="0.0" width="90" height="90"/>
-                                        <state key="normal" image="icon_settings.png">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint id="4892" firstAttribute="width" constant="90"/>
-                                            <constraint id="4893" firstAttribute="height" constant="90"/>
-                                        </constraints>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" id="4806" translatesAutoresizingMaskIntoConstraints="NO" textAlignment="center">
-                                        <rect key="frame" x="20" y="98" width="80" height="21"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <constraints>
-                                            <constraint id="4896" firstAttribute="width" constant="80"/>
-                                            <constraint id="4897" firstAttribute="height" constant="21"/>
-                                        </constraints>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint id="4888" firstAttribute="width" constant="120"/>
-                                    <constraint id="4889" firstAttribute="height" constant="120"/>
-                                    <constraint id="4890" firstItem="4805" firstAttribute="top" secondItem="4792" secondAttribute="top"/>
-                                    <constraint id="4891" firstItem="4805" firstAttribute="leading" secondItem="4792" secondAttribute="leading" constant="15"/>
-                                    <constraint id="4894" firstItem="4792" firstAttribute="bottom" secondItem="4806" secondAttribute="bottom" constant="1"/>
-                                    <constraint id="4895" firstItem="4806" firstAttribute="leading" secondItem="4792" secondAttribute="leading" constant="20"/>
-                                </constraints>
-                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="LabelInfo" text="Information" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3897">
+                                <rect key="frame" x="60" y="201" width="68" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="LabelMap" text="Map" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3898">
+                                <rect key="frame" x="288" y="201" width="29" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="LabelEvents" text="Events" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3899">
+                                <rect key="frame" x="486" y="201" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" restorationIdentifier="LabelEmail" text="Email" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3900">
+                                <rect key="frame" x="78" y="353" width="32" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="LabelCanvas" text="Canvas" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3901">
+                                <rect key="frame" x="280" y="353" width="42" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" restorationIdentifier="LabelSettings" text="Settings" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="3902">
+                                <rect key="frame" x="479" y="353" width="52" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" none="YES" header="YES"/>
+                            <accessibilityTraits key="traits" button="YES" image="YES" staticText="YES" header="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint id="4814" firstItem="4784" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="87"/>
-                            <constraint id="4815" firstItem="4784" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="20"/>
-                            <constraint id="4826" firstItem="4785" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="87"/>
-                            <constraint id="4827" firstItem="2655" firstAttribute="trailing" secondItem="4785" secondAttribute="trailing" constant="240"/>
-                            <constraint id="4838" firstItem="4786" firstAttribute="top" secondItem="2655" secondAttribute="top" constant="87"/>
-                            <constraint id="4839" firstItem="2655" firstAttribute="trailing" secondItem="4786" secondAttribute="trailing" constant="20"/>
-                            <constraint id="4862" firstItem="4790" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="20"/>
-                            <constraint id="4863" firstItem="2655" firstAttribute="bottom" secondItem="4790" secondAttribute="bottom" constant="219"/>
-                            <constraint id="4874" firstItem="2655" firstAttribute="bottom" secondItem="4791" secondAttribute="bottom" constant="219"/>
-                            <constraint id="4875" firstItem="2655" firstAttribute="trailing" secondItem="4791" secondAttribute="trailing" constant="240"/>
-                            <constraint id="4886" firstItem="2655" firstAttribute="bottom" secondItem="4792" secondAttribute="bottom" constant="219"/>
-                            <constraint id="4887" firstItem="2655" firstAttribute="trailing" secondItem="4792" secondAttribute="trailing" constant="20"/>
+                            <constraint firstItem="3900" firstAttribute="leading" secondItem="2655" secondAttribute="leading" constant="77" id="4805"/>
+                            <constraint firstItem="3900" firstAttribute="top" secondItem="2651" secondAttribute="bottom" constant="289" id="4807"/>
+                            <constraint firstAttribute="trailing" secondItem="3902" secondAttribute="trailing" constant="69" id="4819"/>
+                            <constraint firstItem="3902" firstAttribute="top" secondItem="2651" secondAttribute="bottom" constant="289" id="4820"/>
+                            <constraint firstAttribute="trailing" secondItem="3797" secondAttribute="trailing" id="4945"/>
+                            <constraint firstAttribute="bottom" secondItem="3797" secondAttribute="bottom" id="4946"/>
                         </constraints>
                     </view>
-                    <navigationItem title="MyCPTC" id="3636" key="navigationItem"/>
+                    <navigationItem key="navigationItem" title="MyCPTC" id="3636"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
+                        <outlet property="ButtonCanvas" destination="3795" id="name-outlet-3795"/>
+                        <outlet property="ButtonEmail" destination="3794" id="name-outlet-3794"/>
+                        <outlet property="ButtonEvents" destination="3793" id="name-outlet-3793"/>
+                        <outlet property="ButtonInfo" destination="3791" id="name-outlet-3791"/>
+                        <outlet property="ButtonMap" destination="3792" id="name-outlet-3792"/>
+                        <outlet property="HomeView" destination="2655" id="name-outlet-2655"/>
+                        <outlet property="LabelCanvas" destination="3901" id="name-outlet-3901"/>
+                        <outlet property="LabelEmail" destination="3900" id="name-outlet-3900"/>
+                        <outlet property="LabelEvents" destination="3899" id="name-outlet-3899"/>
+                        <outlet property="LabelInfo" destination="3897" id="name-outlet-3897"/>
+                        <outlet property="LabelMap" destination="3898" id="name-outlet-3898"/>
+                        <outlet property="LabelSettings" destination="3902" id="name-outlet-3902"/>
                         <outlet property="TableViewEvents" destination="3797" id="name-outlet-3797"/>
-                        <outlet property="ButtonInfo" destination="4793" id="name-outlet-4793"/>
-                        <outlet property="ButtonMap" destination="4795" id="name-outlet-4795"/>
-                        <outlet property="ButtonEvents" destination="4799" id="name-outlet-4799"/>
-                        <outlet property="LabelInfo" destination="4794" id="name-outlet-4794"/>
-                        <outlet property="LabelMap" destination="4798" id="name-outlet-4798"/>
-                        <outlet property="LabelEvents" destination="4800" id="name-outlet-4800"/>
-                        <outlet property="LabelEmail" destination="4802" id="name-outlet-4802"/>
-                        <outlet property="ButtonEmail" destination="4801" id="name-outlet-4801"/>
-                        <outlet property="ButtonCanvas" destination="4803" id="name-outlet-4803"/>
-                        <outlet property="LabelCanvas" destination="4804" id="name-outlet-4804"/>
-                        <outlet property="ViewInfo" destination="4784" id="name-outlet-4784"/>
-                        <outlet property="ViewMap" destination="4785" id="name-outlet-4785"/>
-                        <outlet property="ViewEvents" destination="4786" id="name-outlet-4786"/>
-                        <outlet property="ViewEmail" destination="4790" id="name-outlet-4790"/>
-                        <outlet property="ViewCanvas" destination="4791" id="name-outlet-4791"/>
-                        <outlet property="ViewSettings" destination="4792" id="name-outlet-4792"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2656" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="236" y="-11"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="3503">
             <objects>
                 <navigationController definesPresentationContext="YES" id="3504" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3507">
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <rect key="frame" x="0.0" y="20" width="880" height="44"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     </navigationBar>
                     <connections>
-                        <segue id="3637" destination="2654" kind="relationship" relationship="rootViewController"/>
+                        <segue destination="2654" kind="relationship" relationship="rootViewController" id="3637"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3508" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-581" y="-9"/>
         </scene>
+        <!--Lakewood Campus-->
         <scene sceneID="3943">
             <objects>
-                <viewController id="3944" sceneMemberID="viewController" customClass="MapViewController" title="Lakewood Campus" useStoryboardIdentifierAsRestorationIdentifier="YES" storyboardIdentifier="MapViewLakewoodController">
+                <viewController storyboardIdentifier="MapViewLakewoodController" title="Lakewood Campus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3944" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3941"/>
                         <viewControllerLayoutGuide type="bottom" id="3942"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3945" restorationIdentifier="MapView">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="MapView" id="3945">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" id="4182" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="MapImageView" multipleTouchEnabled="YES">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapImageView" translatesAutoresizingMaskIntoConstraints="NO" id="4182">
                                 <rect key="frame" x="0.0" y="107" width="600" height="230"/>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="4183" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="MapViewLakewood" showsUserLocation="YES">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapViewLakewood" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4183">
                                 <rect key="frame" x="0.0" y="336" width="600" height="264"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
                                 </accessibility>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4184" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" buttonType="roundedRect">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4184">
                                 <rect key="frame" x="455" y="69" width="138" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="South Hill Map  &gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" staticText="YES" button="YES"/>
-                                </accessibility>
                                 <connections>
-                                    <segue id="4262" destination="4188" kind="show"/>
+                                    <segue destination="4188" kind="show" id="4262"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ButtonSHMap" destination="4184" id="name-outlet-4184"/>
-                        <outlet property="MapView" destination="3945" id="name-outlet-3945"/>
                         <outlet property="MapImageView" destination="4182" id="name-outlet-4182"/>
+                        <outlet property="MapView" destination="3945" id="name-outlet-3945"/>
                         <outlet property="MapViewLakewood" destination="4183" id="name-outlet-4183"/>
                     </connections>
                 </viewController>
@@ -397,43 +252,44 @@
             </objects>
             <point key="canvasLocation" x="1081" y="-70"/>
         </scene>
+        <!--Upcoming Events-->
         <scene sceneID="4016">
             <objects>
-                <tableViewController id="4017" sceneMemberID="viewController" customClass="EventsViewController" storyboardIdentifier="EventsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Upcoming Events">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="4018" restorationIdentifier="EventsTableView">
+                <tableViewController storyboardIdentifier="EventsViewController" title="Upcoming Events" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4017" customClass="EventsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="EventsTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="4018">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4021" rowHeight="44">
-                                <rect key="frame" x="0.0" y="55.5" width="600" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4021">
+                                <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4021" id="4022">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4025" rowHeight="44">
-                                <rect key="frame" x="0.0" y="99.5" width="600" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="4025">
+                                <rect key="frame" x="0.0" y="158" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4025" id="4026">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4027" rowHeight="44">
-                                <rect key="frame" x="0.0" y="143.5" width="600" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="4027">
+                                <rect key="frame" x="0.0" y="202" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4027" id="4028">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4029" rowHeight="44">
-                                <rect key="frame" x="0.0" y="187.5" width="600" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="44" id="4029">
+                                <rect key="frame" x="0.0" y="246" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4029" id="4030">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -451,9 +307,10 @@
             </objects>
             <point key="canvasLocation" x="1088" y="651"/>
         </scene>
+        <!--Student Email-->
         <scene sceneID="4103">
             <objects>
-                <viewController id="4104" sceneMemberID="viewController" customClass="EmailViewController" storyboardIdentifier="EmailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Student Email">
+                <viewController storyboardIdentifier="EmailViewController" title="Student Email" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4104" customClass="EmailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4101"/>
                         <viewControllerLayoutGuide type="bottom" id="4102"/>
@@ -461,48 +318,47 @@
                     <view key="view" contentMode="scaleToFill" id="4105">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Store your email address and password in the Settings page for quicker access to your CPTC email." lineBreakMode="wordWrap" minimumFontSize="10" id="4176" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" numberOfLines="2">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Store your email address and password in the Settings page for quicker access to your CPTC email." lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4176">
                                 <rect key="frame" x="20" y="78" width="560" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4177" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4177">
                                 <rect key="frame" x="56" y="206" width="51" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4178" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="@student.cptc.edu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@student.cptc.edu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4178">
                                 <rect key="frame" x="124" y="202" width="283" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4179" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4179">
                                 <rect key="frame" x="26" y="262" width="81" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4180" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="********">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4180">
                                 <rect key="frame" x="124" y="258" width="283" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" spellCheckingType="no" autocorrectionType="no" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <webView contentMode="scaleToFill" id="4181" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="EmailWebView" multipleTouchEnabled="YES">
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="EmailWebView" translatesAutoresizingMaskIntoConstraints="NO" id="4181">
                                 <rect key="frame" x="0.0" y="364" width="600" height="236"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" link="YES" phoneNumber="YES"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
                                 </accessibility>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4383" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4383">
                                 <rect key="frame" x="26" y="304" width="554" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Submit">
@@ -510,47 +366,49 @@
                                 </state>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="ButtonEmailSubmit" destination="4383" id="name-outlet-4383"/>
+                        <outlet property="EmailWebView" destination="4181" id="name-outlet-4181"/>
                         <outlet property="TextFieldEmailPassword" destination="4180" id="name-outlet-4180"/>
                         <outlet property="TextFieldStudentEmail" destination="4178" id="name-outlet-4178"/>
-                        <outlet property="EmailWebView" destination="4181" id="name-outlet-4181"/>
-                        <outlet property="ButtonEmailSubmit" destination="4383" id="name-outlet-4383"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4106" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1082" y="1367"/>
         </scene>
+        <!--South Hill Campus-->
         <scene sceneID="4187">
             <objects>
-                <viewController id="4188" sceneMemberID="viewController" customClass="Map2ViewController" storyboardIdentifier="MapViewSHController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="South Hill Campus">
+                <viewController storyboardIdentifier="MapViewSHController" title="South Hill Campus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4188" customClass="Map2ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4185"/>
                         <viewControllerLayoutGuide type="bottom" id="4186"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4189" restorationIdentifier="MapSHView" multipleTouchEnabled="YES">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MapSHView" id="4189">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <accessibility key="accessibilityConfiguration">
-                            <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
-                        </accessibility>
                         <subviews>
-                            <imageView contentMode="scaleToFill" id="4264" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="Map2ImageView" multipleTouchEnabled="YES">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Map2ImageView" translatesAutoresizingMaskIntoConstraints="NO" id="4264">
                                 <rect key="frame" x="0.0" y="106" width="600" height="233"/>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="4265" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="MapViewSH" showsUserLocation="YES">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapViewSH" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4265">
                                 <rect key="frame" x="0.0" y="340" width="600" height="260"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" updatesFrequently="YES"/>
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
                                 </accessibility>
                             </mapView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                        </accessibility>
                     </view>
                     <connections>
-                        <outlet property="MapSHView" destination="4189" id="name-outlet-4189"/>
                         <outlet property="Map2ImageView" destination="4264" id="name-outlet-4264"/>
+                        <outlet property="MapSHView" destination="4189" id="name-outlet-4189"/>
                         <outlet property="MapViewSH" destination="4265" id="name-outlet-4265"/>
                     </connections>
                 </viewController>
@@ -558,9 +416,10 @@
             </objects>
             <point key="canvasLocation" x="1863" y="-69"/>
         </scene>
+        <!--CPTC Canvas-->
         <scene sceneID="4386">
             <objects>
-                <viewController id="4387" sceneMemberID="viewController" customClass="CanvasViewController" storyboardIdentifier="CanvasViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="CPTC Canvas">
+                <viewController storyboardIdentifier="CanvasViewController" title="CPTC Canvas" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4387" customClass="CanvasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4384"/>
                         <viewControllerLayoutGuide type="bottom" id="4385"/>
@@ -568,31 +427,29 @@
                     <view key="view" contentMode="scaleToFill" id="4388">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4419" fixedFrame="YES" animating="YES" hidesWhenStopped="YES">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4419">
                                 <rect key="frame" x="560" y="78" width="20" height="20"/>
                             </activityIndicatorView>
-                            <webView contentMode="scaleToFill" id="4420" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="CanvasWebView">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="CanvasWebView" translatesAutoresizingMaskIntoConstraints="NO" id="4420">
                                 <rect key="frame" x="0.0" y="116" width="600" height="340"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press the icon to open up Canvas in the App Store" lineBreakMode="tailTruncation" minimumFontSize="10" id="4421" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Press the icon to open up Canvas in the App Store" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4421">
                                 <rect key="frame" x="20" y="492" width="392" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4422" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="ButtonCanvasIcon">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ButtonCanvasIcon" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4422">
                                 <rect key="frame" x="490" y="490" width="90" height="90"/>
-                                <size key="titleShadowOffset" width="0" height="0"/>
-                                <state key="normal" image="Images.xcassets/icon_canvas.imageset/canvas_icon.png"/>
                                 <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" image="YES" button="YES"/>
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
+                                <state key="normal" image="Images.xcassets/icon_canvas.imageset/canvas_icon.png"/>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please enter your credentials to access Canvas by Instructure" lineBreakMode="tailTruncation" minimumFontSize="10" id="4423" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" restorationIdentifier="LabelEnterCanvasCreds">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="LabelEnterCanvasCreds" text="Please enter your credentials to access Canvas by Instructure" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4423">
                                 <rect key="frame" x="20" y="78" width="560" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -600,110 +457,111 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="ActivityCanvas" destination="4419" id="name-outlet-4419"/>
-                        <outlet property="LabelPressCanvasIcon" destination="4421" id="name-outlet-4421"/>
                         <outlet property="ButtonCanvasIcon" destination="4422" id="name-outlet-4422"/>
-                        <outlet property="LabelEnterCanvasCreds" destination="4423" id="name-outlet-4423"/>
                         <outlet property="CanvasWebView" destination="4420" id="name-outlet-4420"/>
+                        <outlet property="LabelEnterCanvasCreds" destination="4423" id="name-outlet-4423"/>
+                        <outlet property="LabelPressCanvasIcon" destination="4421" id="name-outlet-4421"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4389" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1085" y="2094"/>
         </scene>
+        <!--Settings and Preferences-->
         <scene sceneID="4426">
             <objects>
-                <viewController id="4427" sceneMemberID="viewController" customClass="SettingsViewController" storyboardIdentifier="SettingsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Settings and Preferences">
+                <viewController storyboardIdentifier="SettingsViewController" title="Settings and Preferences" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4427" customClass="SettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4424"/>
                         <viewControllerLayoutGuide type="bottom" id="4425"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="4428" restorationIdentifier="SettingsView">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SettingsView" id="4428">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student Email:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4508" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Student Email:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4508">
                                 <rect key="frame" x="20" y="96" width="120" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4509" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="@student.cptc.edu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@student.cptc.edu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4509">
                                 <rect key="frame" x="148" y="92" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4510" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4510">
                                 <rect key="frame" x="49" y="143" width="91" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4511" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="********" restorationIdentifier="TextFieldStudentEmailPassword">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="TextFieldStudentEmailPassword" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4511">
                                 <rect key="frame" x="148" y="138" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" autocorrectionType="no" spellCheckingType="no"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student ID #:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4512" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Student ID #:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4512">
                                 <rect key="frame" x="20" y="198" width="106" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4513" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="925123456">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="925123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4513">
                                 <rect key="frame" x="148" y="194" width="130" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas Password:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4514" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Canvas Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4514">
                                 <rect key="frame" x="20" y="240" width="144" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4515" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES" placeholder="********">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4515">
                                 <rect key="frame" x="181" y="236" width="233" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Store map data locally:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4516" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Store map data locally:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4516">
                                 <rect key="frame" x="20" y="329" width="189" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4517" fixedFrame="YES">
+                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4517">
                                 <rect key="frame" x="217" y="324" width="79" height="27"/>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enable CPTC theme:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4518" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Enable CPTC theme:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4518">
                                 <rect key="frame" x="20" y="376" width="173" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4519" fixedFrame="YES">
+                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4519">
                                 <rect key="frame" x="217" y="371" width="79" height="27"/>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enable notifications:" lineBreakMode="tailTruncation" minimumFontSize="10" id="4522" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Enable notifications:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4522">
                                 <rect key="frame" x="20" y="423" width="159" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4523" fixedFrame="YES">
+                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4523">
                                 <rect key="frame" x="217" y="418" width="79" height="27"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4525" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4525">
                                 <rect key="frame" x="20" y="492" width="560" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Save">
@@ -711,56 +569,55 @@
                                 </state>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Reset Settings" id="4503" translatesAutoresizingMaskIntoConstraints="NO">
-                            <accessibilityConfiguration key="accessibilityConfiguration">
-                                <traits key="traits" staticText="YES" button="YES"/>
-                            </accessibilityConfiguration>
-                        </barButtonItem>
-                        <barButtonItem id="4504" translatesAutoresizingMaskIntoConstraints="NO" title="Forget Passwords"/>
+                        <barButtonItem title="Reset Settings" id="4503"/>
+                        <barButtonItem title="Forget Passwords" id="4504"/>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="BarButtonReset" destination="4503" id="name-outlet-4503"/>
-                        <outlet property="LabelStudentEmail" destination="4508" id="name-outlet-4508"/>
-                        <outlet property="LabelStudentEmailPassword" destination="4510" id="name-outlet-4510"/>
-                        <outlet property="TextFieldStudentEmail" destination="4509" id="name-outlet-4509"/>
-                        <outlet property="TextFieldStudentEmailPassword" destination="4511" id="name-outlet-4511"/>
-                        <outlet property="TextFieldSid" destination="4513" id="name-outlet-4513"/>
-                        <outlet property="TextFieldCanvasPassword" destination="4515" id="name-outlet-4515"/>
-                        <outlet property="SettingsView" destination="4428" id="name-outlet-4428"/>
                         <outlet property="LabelCanvasPassword" destination="4514" id="name-outlet-4514"/>
                         <outlet property="LabelSid" destination="4512" id="name-outlet-4512"/>
                         <outlet property="LabelStoreMapData" destination="4516" id="name-outlet-4516"/>
+                        <outlet property="LabelStudentEmail" destination="4508" id="name-outlet-4508"/>
+                        <outlet property="LabelStudentEmailPassword" destination="4510" id="name-outlet-4510"/>
+                        <outlet property="SettingsView" destination="4428" id="name-outlet-4428"/>
+                        <outlet property="TextFieldCanvasPassword" destination="4515" id="name-outlet-4515"/>
+                        <outlet property="TextFieldSid" destination="4513" id="name-outlet-4513"/>
+                        <outlet property="TextFieldStudentEmail" destination="4509" id="name-outlet-4509"/>
+                        <outlet property="TextFieldStudentEmailPassword" destination="4511" id="name-outlet-4511"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4429" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1088" y="2784"/>
         </scene>
+        <!--Information-->
         <scene sceneID="4652">
             <objects>
-                <tabBarController definesPresentationContext="YES" id="4653" sceneMemberID="viewController" customClass="InfoTabViewController" storyboardIdentifier="InfoTabView" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Information">
+                <tabBarController storyboardIdentifier="InfoTabView" title="Information" definesPresentationContext="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4653" customClass="InfoTabViewController" sceneMemberID="viewController">
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="4658" translucent="YES">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="4658">
                         <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="InfoTabBar" destination="4658" id="name-outlet-4658"/>
                         <segue destination="4655" kind="relationship" relationship="viewControllers" id="4654"/>
                         <segue destination="4657" kind="relationship" relationship="viewControllers" id="4656"/>
-                        <outlet property="InfoTabBar" destination="4658" id="name-outlet-4658"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4659" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1029" y="-1036"/>
         </scene>
+        <!--General Information-->
         <scene sceneID="4660">
             <objects>
-                <viewController id="4655" sceneMemberID="viewController" customClass="GeneralInfoViewController" storyboardIdentifier="GeneralInfoView" useStoryboardIdentifierAsRestorationIdentifier="YES" title="General Information">
+                <viewController storyboardIdentifier="GeneralInfoView" title="General Information" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4655" customClass="GeneralInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4648"/>
                         <viewControllerLayoutGuide type="bottom" id="4649"/>
@@ -768,48 +625,41 @@
                     <view key="view" contentMode="scaleToFill" id="4661">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4760" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4760">
                                 <rect key="frame" x="0.0" y="67" width="600" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4761" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4761">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4762" tableViewCell="4761">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4761" id="U1P-0E-8yy">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4763" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4763">
+                                        <rect key="frame" x="0.0" y="130" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4764" tableViewCell="4763">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4763" id="zO0-Uc-RQS">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4765" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="110" width="600" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4765">
+                                        <rect key="frame" x="0.0" y="174" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4766" tableViewCell="4765">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4765" id="v2p-ng-DaQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="4662" title="General Info" tag="0">
-                        <accessibilityConfiguration key="accessibilityConfiguration">
-                            <traits key="traits" image="YES" button="YES" staticText="YES"/>
-                        </accessibilityConfiguration>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="General Info" id="4662"/>
                     <connections>
                         <outlet property="GeneralInfoTab" destination="4662" id="name-outlet-4662"/>
                         <outlet property="GeneralInfoTableView" destination="4760" id="name-outlet-4760"/>
@@ -819,9 +669,10 @@
             </objects>
             <point key="canvasLocation" x="1912" y="-1527"/>
         </scene>
+        <!--Programs and Certificates-->
         <scene sceneID="4664">
             <objects>
-                <viewController id="4657" sceneMemberID="viewController" customClass="ProgramsInfoViewController" storyboardIdentifier="ProgramsInfoView" useStoryboardIdentifierAsRestorationIdentifier="YES" title="Programs and Certificates">
+                <viewController storyboardIdentifier="ProgramsInfoView" title="Programs and Certificates" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4657" customClass="ProgramsInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4650"/>
                         <viewControllerLayoutGuide type="bottom" id="4651"/>
@@ -829,48 +680,41 @@
                     <view key="view" contentMode="scaleToFill" id="4665">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4753" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4753">
                                 <rect key="frame" x="0.0" y="66" width="600" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4754" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="22" width="600" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4754">
+                                        <rect key="frame" x="0.0" y="86" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4755" tableViewCell="4754">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4754" id="XBt-fx-Tno">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4756" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="66" width="600" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4756">
+                                        <rect key="frame" x="0.0" y="130" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4757" tableViewCell="4756">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4756" id="gIn-3O-POi">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="4758" rowHeight="44">
-                                        <rect key="frame" x="0.0" y="110" width="600" height="44"/>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="4758">
+                                        <rect key="frame" x="0.0" y="174" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4759" tableViewCell="4758">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4758" id="2na-Bt-lih">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="4666" selectedImage="icon_programs" title="Programs">
-                        <accessibilityConfiguration key="accessibilityConfiguration">
-                            <traits key="traits" image="YES"/>
-                        </accessibilityConfiguration>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Programs" selectedImage="icon_programs" id="4666"/>
                     <connections>
                         <outlet property="ProgramsTab" destination="4666" id="name-outlet-4666"/>
                         <outlet property="ProgramsTableView" destination="4753" id="name-outlet-4753"/>
@@ -880,53 +724,328 @@
             </objects>
             <point key="canvasLocation" x="1915" y="-825"/>
         </scene>
+        <!--CPTC-->
+        <scene sceneID="4963">
+            <objects>
+                <viewController storyboardIdentifier="TestViewController" title="CPTC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4964" customClass="TestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4961"/>
+                        <viewControllerLayoutGuide type="bottom" id="4962"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4965">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4968">
+                                <rect key="frame" x="20" y="61" width="170" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5041">
+                                        <rect key="frame" x="40" y="40" width="90" height="90"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5573"/>
+                                            <constraint firstAttribute="height" constant="90" id="5574"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_info">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Information" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5042">
+                                        <rect key="frame" x="40" y="138" width="90" height="15"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5597"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5543"/>
+                                    <constraint firstAttribute="height" constant="170" id="5544"/>
+                                    <constraint firstAttribute="bottom" secondItem="5041" secondAttribute="bottom" constant="40" id="5571"/>
+                                    <constraint firstItem="5041" firstAttribute="leading" secondItem="4968" secondAttribute="leading" constant="40" id="5572"/>
+                                    <constraint firstAttribute="bottom" secondItem="5042" secondAttribute="bottom" constant="17" id="5595"/>
+                                    <constraint firstItem="5042" firstAttribute="leading" secondItem="4968" secondAttribute="leading" constant="40" id="5596"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5036">
+                                <rect key="frame" x="215" y="61" width="170" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5043">
+                                        <rect key="frame" x="40" y="40" width="90" height="90"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5577"/>
+                                            <constraint firstAttribute="height" constant="90" id="5578"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_map">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Map" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5044">
+                                        <rect key="frame" x="40" y="138" width="90" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5600"/>
+                                            <constraint firstAttribute="height" constant="21" id="5601"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5539"/>
+                                    <constraint firstAttribute="height" constant="170" id="5540"/>
+                                    <constraint firstItem="5043" firstAttribute="leading" secondItem="5036" secondAttribute="leading" constant="40" id="5623"/>
+                                    <constraint firstAttribute="bottom" secondItem="5043" secondAttribute="bottom" constant="40" id="5624"/>
+                                    <constraint firstAttribute="bottom" secondItem="5044" secondAttribute="bottom" constant="11" id="5625"/>
+                                    <constraint firstItem="5044" firstAttribute="leading" secondItem="5036" secondAttribute="leading" constant="40" id="5626"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5037">
+                                <rect key="frame" x="410" y="61" width="170" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5045">
+                                        <rect key="frame" x="40" y="40" width="90" height="90"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5581"/>
+                                            <constraint firstAttribute="height" constant="90" id="5582"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" image="icon_events">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Events" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5046">
+                                        <rect key="frame" x="40" y="138" width="90" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5604"/>
+                                            <constraint firstAttribute="height" constant="21" id="5605"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5535"/>
+                                    <constraint firstAttribute="height" constant="170" id="5536"/>
+                                    <constraint firstAttribute="bottom" secondItem="5045" secondAttribute="bottom" constant="40" id="5579"/>
+                                    <constraint firstItem="5045" firstAttribute="leading" secondItem="5037" secondAttribute="leading" constant="40" id="5580"/>
+                                    <constraint firstAttribute="bottom" secondItem="5046" secondAttribute="bottom" constant="11" id="5602"/>
+                                    <constraint firstItem="5046" firstAttribute="leading" secondItem="5037" secondAttribute="leading" constant="40" id="5603"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5038">
+                                <rect key="frame" x="20" y="252" width="170" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5047">
+                                        <rect key="frame" x="40" y="40" width="90" height="90"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5585"/>
+                                            <constraint firstAttribute="height" constant="90" id="5586"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_email">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5048">
+                                        <rect key="frame" x="40" y="138" width="90" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5608"/>
+                                            <constraint firstAttribute="height" constant="21" id="5609"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5558"/>
+                                    <constraint firstAttribute="height" constant="170" id="5559"/>
+                                    <constraint firstAttribute="bottom" secondItem="5047" secondAttribute="bottom" constant="40" id="5583"/>
+                                    <constraint firstItem="5047" firstAttribute="leading" secondItem="5038" secondAttribute="leading" constant="40" id="5584"/>
+                                    <constraint firstAttribute="bottom" secondItem="5048" secondAttribute="bottom" constant="11" id="5606"/>
+                                    <constraint firstItem="5048" firstAttribute="leading" secondItem="5038" secondAttribute="leading" constant="40" id="5607"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5039">
+                                <rect key="frame" x="215" y="252" width="170" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5049">
+                                        <rect key="frame" x="40" y="40" width="90" height="90"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5589"/>
+                                            <constraint firstAttribute="height" constant="90" id="5590"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_canvas">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5050">
+                                        <rect key="frame" x="40" y="138" width="90" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5612"/>
+                                            <constraint firstAttribute="height" constant="21" id="5613"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="5550"/>
+                                    <constraint firstAttribute="width" constant="170" id="5551"/>
+                                    <constraint firstAttribute="bottom" secondItem="5049" secondAttribute="bottom" constant="40" id="5629"/>
+                                    <constraint firstItem="5049" firstAttribute="leading" secondItem="5039" secondAttribute="leading" constant="40" id="5630"/>
+                                    <constraint firstAttribute="bottom" secondItem="5050" secondAttribute="bottom" constant="11" id="5631"/>
+                                    <constraint firstItem="5050" firstAttribute="leading" secondItem="5039" secondAttribute="leading" constant="40" id="5632"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5040">
+                                <rect key="frame" x="410" y="252" width="170" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5051">
+                                        <rect key="frame" x="40" y="40" width="90" height="90"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5593"/>
+                                            <constraint firstAttribute="height" constant="90" id="5594"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_settings">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5052">
+                                        <rect key="frame" x="40" y="138" width="90" height="21"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="5616"/>
+                                            <constraint firstAttribute="height" constant="21" id="5617"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="5566"/>
+                                    <constraint firstAttribute="height" constant="170" id="5567"/>
+                                    <constraint firstAttribute="bottom" secondItem="5051" secondAttribute="bottom" constant="40" id="5591"/>
+                                    <constraint firstItem="5051" firstAttribute="leading" secondItem="5040" secondAttribute="leading" constant="40" id="5592"/>
+                                    <constraint firstAttribute="bottom" secondItem="5052" secondAttribute="bottom" constant="11" id="5614"/>
+                                    <constraint firstItem="5052" firstAttribute="leading" secondItem="5040" secondAttribute="leading" constant="40" id="5615"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="5083">
+                                <rect key="frame" x="20" y="455" width="560" height="145"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="5084">
+                                        <rect key="frame" x="0.0" y="22" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5084" id="Gj2-oQ-ytb">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="5086">
+                                        <rect key="frame" x="0.0" y="66" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5086" id="fG7-3c-Id0">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="44" id="5088">
+                                        <rect key="frame" x="0.0" y="110" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5088" id="evt-lj-RSk">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5037" firstAttribute="top" secondItem="4965" secondAttribute="top" constant="61" id="5533"/>
+                            <constraint firstAttribute="trailing" secondItem="5037" secondAttribute="trailing" constant="20" id="5534"/>
+                            <constraint firstItem="4968" firstAttribute="top" secondItem="4965" secondAttribute="top" constant="61" id="5541"/>
+                            <constraint firstItem="4968" firstAttribute="leading" secondItem="4965" secondAttribute="leading" constant="20" id="5542"/>
+                            <constraint firstItem="5038" firstAttribute="leading" secondItem="4965" secondAttribute="leading" constant="20" id="5557"/>
+                            <constraint firstAttribute="trailing" secondItem="5040" secondAttribute="trailing" constant="20" id="5565"/>
+                            <constraint firstItem="5040" firstAttribute="top" secondItem="5037" secondAttribute="bottom" constant="21" id="5568"/>
+                            <constraint firstItem="5038" firstAttribute="top" secondItem="4968" secondAttribute="bottom" constant="21" id="5620"/>
+                            <constraint firstItem="5036" firstAttribute="top" secondItem="4965" secondAttribute="top" constant="61" id="5621"/>
+                            <constraint firstAttribute="trailing" secondItem="5036" secondAttribute="trailing" constant="215" id="5622"/>
+                            <constraint firstAttribute="bottom" secondItem="5039" secondAttribute="bottom" constant="178" id="5627"/>
+                            <constraint firstAttribute="trailing" secondItem="5039" secondAttribute="trailing" constant="215" id="5628"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TestView" destination="4965" id="name-outlet-4965"/>
+                        <outlet property="buttonCanvas" destination="5049" id="name-outlet-5049"/>
+                        <outlet property="buttonEmail" destination="5047" id="name-outlet-5047"/>
+                        <outlet property="buttonEvents" destination="5045" id="name-outlet-5045"/>
+                        <outlet property="buttonInfo" destination="5041" id="name-outlet-5041"/>
+                        <outlet property="buttonMap" destination="5043" id="name-outlet-5043"/>
+                        <outlet property="buttonSettings" destination="5051" id="name-outlet-5051"/>
+                        <outlet property="labelCanvas" destination="5050" id="name-outlet-5050"/>
+                        <outlet property="labelEmail" destination="5048" id="name-outlet-5048"/>
+                        <outlet property="labelEvents" destination="5046" id="name-outlet-5046"/>
+                        <outlet property="labelInfo" destination="5042" id="name-outlet-5042"/>
+                        <outlet property="labelMap" destination="5044" id="name-outlet-5044"/>
+                        <outlet property="labelSettings" destination="5052" id="name-outlet-5052"/>
+                        <outlet property="viewCanvas" destination="5039" id="name-outlet-5039"/>
+                        <outlet property="viewEmail" destination="5038" id="name-outlet-5038"/>
+                        <outlet property="viewEvents" destination="5037" id="name-outlet-5037"/>
+                        <outlet property="viewInfo" destination="4968" id="name-outlet-4968"/>
+                        <outlet property="viewMap" destination="5036" id="name-outlet-5036"/>
+                        <outlet property="viewSettings" destination="5040" id="name-outlet-5040"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4966" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="781"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="icon_info.png" width="180" height="180"/>
-        <image name="canvas_icon.png" width="100" height="100"/>
-        <image name="cptcmountain.png" width="519.6667" height="222.333328"/>
-        <image name="icon_email.png" width="180" height="180"/>
-        <image name="icon_events.png" width="180" height="180"/>
-        <image name="icon_map.png" width="180" height="180"/>
-        <image name="icon_programs.png" width="180" height="180"/>
-        <image name="icon_settings.png" width="120" height="120"/>
-        <image name="simon.png" width="534" height="505"/>
-        <image name="simonfull.png" width="400" height="690"/>
-        <image name="icon_info" width="120" height="120"/>
-        <image name="Image" width="120" height="120"/>
-        <image name="Image-1" width="120" height="120"/>
-        <image name="Image-2" width="120" height="120"/>
-        <image name="Image-3" width="100" height="100"/>
-        <image name="Image-4" width="120" height="120"/>
-        <image name="Image-5" width="120" height="120"/>
-        <image name="Image-6" width="519.6667" height="222.333328"/>
-        <image name="Image-7" width="120" height="120"/>
-        <image name="Image-8" width="178" height="168.333328"/>
-        <image name="Image-9" width="400" height="690"/>
-        <image name="cptc_canvas" width="120" height="120"/>
-        <image name="cptcmountain" width="519.6667" height="222.333328"/>
+        <image name="Images.xcassets/icon_canvas.imageset/canvas_icon.png" width="100" height="100"/>
         <image name="icon_canvas" width="100" height="100"/>
         <image name="icon_email" width="120" height="120"/>
         <image name="icon_events" width="120" height="120"/>
+        <image name="icon_info" width="120" height="120"/>
         <image name="icon_map" width="120" height="120"/>
         <image name="icon_programs" width="120" height="120"/>
         <image name="icon_settings" width="120" height="120"/>
-        <image name="simon" width="178" height="168.333328"/>
-        <image name="simon_full" width="400" height="690"/>
-        <image name="Images.xcassets/cptc_canvas.imageset/icon_canvas.png" width="120" height="120"/>
-        <image name="Images.xcassets/cptcmountain.imageset/cptcmountain.png" width="519.6667" height="222.333328"/>
-        <image name="Images.xcassets/icon_canvas.imageset/canvas_icon.png" width="100" height="100"/>
-        <image name="Images.xcassets/icon_email.imageset/icon_email.png" width="120" height="120"/>
-        <image name="Images.xcassets/icon_events.imageset/icon_events.png" width="120" height="120"/>
-        <image name="Images.xcassets/icon_info.imageset/icon_info.png" width="120" height="120"/>
-        <image name="Images.xcassets/icon_map.imageset/icon_map.png" width="120" height="120"/>
-        <image name="Images.xcassets/icon_programs.imageset/icon_programs.png" width="120" height="120"/>
-        <image name="Images.xcassets/icon_settings.imageset/icon_settings.png" width="120" height="120"/>
-        <image name="Images.xcassets/simon.imageset/simon.png" width="178" height="168.333328"/>
-        <image name="Images.xcassets/simon_full.imageset/simonfull.png" width="400" height="690"/>
-        <image name="canvas.png" width="300" height="300"/>
-        <image name="icon_base.png" width="120" height="120"/>
-        <image name="icon_canvas.png" width="180" height="180"/>
-        <image name="logo.png" width="130" height="55"/>
     </resources>
 </document>
