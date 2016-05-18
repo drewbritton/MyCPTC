@@ -64,31 +64,11 @@ namespace CPTCAppNew.iOS
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel labelSettings { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITableView TableViewEvents { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView ViewCanvas { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView ViewEmail { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView ViewEvents { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView ViewInfo { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView ViewMap { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIView ViewSettings { get; set; }
 
 		[Action ("ButtonInfo_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -144,33 +124,13 @@ namespace CPTCAppNew.iOS
 				LabelMap.Dispose ();
 				LabelMap = null;
 			}
+			if (labelSettings != null) {
+				labelSettings.Dispose ();
+				labelSettings = null;
+			}
 			if (TableViewEvents != null) {
 				TableViewEvents.Dispose ();
 				TableViewEvents = null;
-			}
-			if (ViewCanvas != null) {
-				ViewCanvas.Dispose ();
-				ViewCanvas = null;
-			}
-			if (ViewEmail != null) {
-				ViewEmail.Dispose ();
-				ViewEmail = null;
-			}
-			if (ViewEvents != null) {
-				ViewEvents.Dispose ();
-				ViewEvents = null;
-			}
-			if (ViewInfo != null) {
-				ViewInfo.Dispose ();
-				ViewInfo = null;
-			}
-			if (ViewMap != null) {
-				ViewMap.Dispose ();
-				ViewMap = null;
-			}
-			if (ViewSettings != null) {
-				ViewSettings.Dispose ();
-				ViewSettings = null;
 			}
 		}
 	}
