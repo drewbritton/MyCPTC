@@ -36,6 +36,10 @@ namespace CPTCAppNew.iOS
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton ButtonSettings { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UIView HomeView { get; set; }
 
 		[Outlet]
@@ -111,6 +115,10 @@ namespace CPTCAppNew.iOS
 			if (ButtonMap != null) {
 				ButtonMap.Dispose ();
 				ButtonMap = null;
+			}
+			if (ButtonSettings != null) {
+				ButtonSettings.Dispose ();
+				ButtonSettings = null;
 			}
 			if (HomeView != null) {
 				HomeView.Dispose ();
