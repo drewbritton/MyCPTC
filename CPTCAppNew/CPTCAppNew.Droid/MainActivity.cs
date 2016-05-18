@@ -30,12 +30,7 @@ namespace CPTCAppNew.Droid
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            //getMap(@"http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg", lakewoodMap);
-            //var imageView = FindViewById<ImageView>(Resource.Id.map);
-            //imageView.SetImageResource(Environment.SpecialFolder.Personal);
-            var imageBitmap = GetImageBitmapFromUrl("http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg");
+            var imageBitmap = getImageHtml("http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg");
             ImageView imagen = FindViewById<ImageView>(Resource.Id.map);
             imagen.SetImageBitmap(imageBitmap);
 
@@ -47,7 +42,7 @@ namespace CPTCAppNew.Droid
             };
         }
 
-        private Bitmap GetImageBitmapFromUrl(string url)
+        private Bitmap getImageBitmapFromUrl(string url)
         {
             Bitmap imageBitmap = null;
 
@@ -63,18 +58,41 @@ namespace CPTCAppNew.Droid
             return imageBitmap;
         }
 
+        private Bitmap getImageHtml(String url)
+        {
 
-        ////public void getMap(String Url, String fileName)
-        //{
-        //    var webclient = new WebClient();
-        //    var directory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-        //    var fileNameAndPath = Path.Combine(directory, fileName);
-        //    webclient.DownloadData(URL, fileNameAndPath);
-        //}
+            byte[] imageBytes;
+            HttpWebRequest imageRequest = (HttpWebRequest)WebRequest.Create(url);
+            WebResponse imageResponse = imageRequest.GetResponse();
 
-            
+            Stream responseStream = imageResponse.GetResponseStream();
 
-        
+            using (BinaryReader br = new BinaryReader(responseStream))
+            {
+                imageBytes = br.ReadBytes(500000);
+                br.Close();
+            }
+            responseStream.Close();
+            imageResponse.Close();
+
+            FileStream fs = new FileStream(Android.OS.Environment.DirectoryPictures, FileMode.Create);
+            BinaryWriter bw = new BinaryWriter(fs);
+            try
+            {
+                bw.Write(imageBytes);
+                Bitmap newImage = null;
+                newImage = (Bitmap)imageBytes;
+                return newImage;
+            }
+            finally
+            {
+                fs.Close();
+                bw.Close();
+                
+            }
+        }
+
+
 
 	}
 }
