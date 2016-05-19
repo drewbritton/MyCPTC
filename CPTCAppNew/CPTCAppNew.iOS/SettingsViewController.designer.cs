@@ -24,10 +24,6 @@ namespace CPTCAppNew.iOS
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		UILabel LabelNotifications { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
 		UILabel LabelSid { get; set; }
 
 		[Outlet]
@@ -41,10 +37,6 @@ namespace CPTCAppNew.iOS
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UIView SettingsView { get; set; }
-
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UISwitch SwitchNotifications { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -72,10 +64,6 @@ namespace CPTCAppNew.iOS
 				LabelCanvasPassword.Dispose ();
 				LabelCanvasPassword = null;
 			}
-			if (LabelNotifications != null) {
-				LabelNotifications.Dispose ();
-				LabelNotifications = null;
-			}
 			if (LabelSid != null) {
 				LabelSid.Dispose ();
 				LabelSid = null;
@@ -91,10 +79,6 @@ namespace CPTCAppNew.iOS
 			if (SettingsView != null) {
 				SettingsView.Dispose ();
 				SettingsView = null;
-			}
-			if (SwitchNotifications != null) {
-				SwitchNotifications.Dispose ();
-				SwitchNotifications = null;
 			}
 			if (TextFieldCanvasPassword != null) {
 				TextFieldCanvasPassword.Dispose ();
