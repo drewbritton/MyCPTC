@@ -287,16 +287,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapImageView" translatesAutoresizingMaskIntoConstraints="NO" id="4182">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MapImageView" translatesAutoresizingMaskIntoConstraints="NO" id="4182">
                                 <rect key="frame" x="0.0" y="107" width="600" height="230"/>
+                                <constraints>
+                                    <constraint id="4941" firstAttribute="width" constant="600"/>
+                                    <constraint id="4942" firstAttribute="height" constant="230"/>
+                                </constraints>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapViewLakewood" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4183">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MapViewLakewood" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4183">
                                 <rect key="frame" x="0.0" y="336" width="600" height="264"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" updatesFrequently="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint id="4945" firstAttribute="width" constant="600"/>
+                                    <constraint id="4946" firstAttribute="height" constant="264"/>
+                                </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4184">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4184">
                                 <rect key="frame" x="455" y="69" width="138" height="30"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
@@ -308,9 +316,20 @@
                                 <connections>
                                     <segue destination="4188" kind="show" id="4262"/>
                                 </connections>
+                                <constraints>
+                                    <constraint id="5154" firstItem="4184" firstAttribute="width" constant="138"/>
+                                </constraints>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="4939" firstItem="3945" firstAttribute="trailing" secondItem="4182" secondAttribute="trailing"/>
+                            <constraint id="4940" firstItem="4182" firstAttribute="top" secondItem="3945" secondAttribute="top" constant="107"/>
+                            <constraint id="4943" firstItem="3945" firstAttribute="trailing" secondItem="4183" secondAttribute="trailing"/>
+                            <constraint id="4944" firstItem="3945" firstAttribute="bottom" secondItem="4183" secondAttribute="bottom"/>
+                            <constraint id="5152" firstItem="4184" firstAttribute="top" secondItem="3945" secondAttribute="top" constant="69"/>
+                            <constraint id="5153" firstItem="4184" firstAttribute="leading" secondItem="3945" secondAttribute="leading" constant="455"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ButtonSHMap" destination="4184" id="name-outlet-4184"/>
@@ -390,54 +409,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Store your email address and password in the Settings page for quicker access to your CPTC email." lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4176">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Store your email address and password in the Settings page for quicker access to your CPTC email." lineBreakMode="wordWrap" numberOfLines="2" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4176">
                                 <rect key="frame" x="20" y="78" width="560" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5204" firstItem="4176" firstAttribute="height" constant="50"/>
+                                </constraints>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4177">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4177">
                                 <rect key="frame" x="56" y="206" width="51" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5178" firstItem="4177" firstAttribute="width" constant="51"/>
+                                    <constraint id="5207" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@student.cptc.edu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4178">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@student.cptc.edu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4178">
                                 <rect key="frame" x="124" y="202" width="283" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4179">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4179">
                                 <rect key="frame" x="26" y="262" width="81" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5189" firstAttribute="width" constant="81"/>
+                                    <constraint id="5190" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4180">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4180">
                                 <rect key="frame" x="124" y="258" width="283" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="5193" firstAttribute="width" constant="283"/>
+                                </constraints>
                             </textField>
-                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="EmailWebView" translatesAutoresizingMaskIntoConstraints="NO" id="4181">
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="EmailWebView" translatesAutoresizingMaskIntoConstraints="NO" id="4181">
                                 <rect key="frame" x="0.0" y="364" width="600" height="236"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" updatesFrequently="YES"/>
                                 </accessibility>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                <constraints>
+                                    <constraint id="5196" firstAttribute="width" constant="600"/>
+                                    <constraint id="5197" firstAttribute="height" constant="236"/>
+                                </constraints>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4383">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4383">
                                 <rect key="frame" x="26" y="304" width="554" height="40"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <constraints>
+                                    <constraint id="5200" firstAttribute="width" constant="554"/>
+                                    <constraint id="5201" firstAttribute="height" constant="40"/>
+                                </constraints>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="5159" firstItem="4176" firstAttribute="leading" secondItem="4105" secondAttribute="leading" constant="20"/>
+                            <constraint id="5160" firstItem="4176" firstAttribute="top" secondItem="4105" secondAttribute="top" constant="78"/>
+                            <constraint id="5162" firstItem="4105" firstAttribute="trailing" secondItem="4176" secondAttribute="trailing" constant="20"/>
+                            <constraint id="5173" firstItem="4105" firstAttribute="trailing" secondItem="4178" secondAttribute="trailing" constant="193"/>
+                            <constraint id="5187" firstItem="4179" firstAttribute="leading" secondItem="4105" secondAttribute="leading" constant="26"/>
+                            <constraint id="5188" firstItem="4179" firstAttribute="top" secondItem="4105" secondAttribute="top" constant="262"/>
+                            <constraint id="5194" firstItem="4105" firstAttribute="bottom" secondItem="4181" secondAttribute="bottom"/>
+                            <constraint id="5195" firstItem="4105" firstAttribute="trailing" secondItem="4181" secondAttribute="trailing"/>
+                            <constraint id="5198" firstItem="4105" firstAttribute="bottom" secondItem="4383" secondAttribute="bottom" constant="256"/>
+                            <constraint id="5199" firstItem="4105" firstAttribute="trailing" secondItem="4383" secondAttribute="trailing" constant="20"/>
+                            <constraint id="5206" firstItem="4177" firstAttribute="leading" secondItem="4105" secondAttribute="leading" constant="56"/>
+                            <constraint id="5208" firstItem="4177" firstAttribute="top" secondItem="4176" secondAttribute="bottom" constant="78"/>
+                            <constraint id="5209" firstItem="4178" firstAttribute="top" secondItem="4176" secondAttribute="bottom" constant="74"/>
+                            <constraint id="5210" firstItem="4178" firstAttribute="leading" secondItem="4177" secondAttribute="trailing" constant="17"/>
+                            <constraint id="5211" firstItem="4180" firstAttribute="top" secondItem="4178" secondAttribute="bottom" constant="26"/>
+                            <constraint id="5212" firstItem="4180" firstAttribute="leading" secondItem="4179" secondAttribute="trailing" constant="17"/>
+                            <constraint id="5213" firstItem="4105" firstAttribute="trailing" secondItem="4180" secondAttribute="trailing" constant="193"/>
+                            <constraint id="5214" firstItem="4383" firstAttribute="top" secondItem="4180" secondAttribute="bottom" constant="16"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ButtonEmailSubmit" destination="4383" id="name-outlet-4383"/>
@@ -462,20 +524,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="Map2ImageView" translatesAutoresizingMaskIntoConstraints="NO" id="4264">
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="Map2ImageView" translatesAutoresizingMaskIntoConstraints="NO" id="4264">
                                 <rect key="frame" x="0.0" y="106" width="600" height="233"/>
+                                <constraints>
+                                    <constraint id="5051" firstAttribute="width" constant="600"/>
+                                    <constraint id="5052" firstAttribute="height" constant="233"/>
+                                </constraints>
                             </imageView>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="MapViewSH" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4265">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="MapViewSH" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4265">
                                 <rect key="frame" x="0.0" y="340" width="600" height="260"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" updatesFrequently="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint id="5055" firstAttribute="width" constant="600"/>
+                                    <constraint id="5056" firstAttribute="height" constant="260"/>
+                                </constraints>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" button="YES" image="YES"/>
                         </accessibility>
+                        <constraints>
+                            <constraint id="5049" firstItem="4189" firstAttribute="trailing" secondItem="4264" secondAttribute="trailing"/>
+                            <constraint id="5050" firstItem="4264" firstAttribute="top" secondItem="4189" secondAttribute="top" constant="106"/>
+                            <constraint id="5053" firstItem="4189" firstAttribute="trailing" secondItem="4265" secondAttribute="trailing"/>
+                            <constraint id="5054" firstItem="4189" firstAttribute="bottom" secondItem="4265" secondAttribute="bottom"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Map2ImageView" destination="4264" id="name-outlet-4264"/>
@@ -502,33 +578,56 @@
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="4419">
                                 <rect key="frame" x="560" y="78" width="20" height="20"/>
                             </activityIndicatorView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="CanvasWebView" translatesAutoresizingMaskIntoConstraints="NO" id="4420">
+                            <webView contentMode="scaleToFill" restorationIdentifier="CanvasWebView" translatesAutoresizingMaskIntoConstraints="NO" id="4420">
                                 <rect key="frame" x="0.0" y="116" width="600" height="340"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint id="4987" firstAttribute="width" constant="600"/>
+                                    <constraint id="4988" firstAttribute="height" constant="340"/>
+                                </constraints>
                             </webView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Press the icon to open up Canvas in the App Store" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4421">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Press the icon to open up Canvas in the App Store" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4421">
                                 <rect key="frame" x="20" y="492" width="392" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ButtonCanvasIcon" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4422">
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="ButtonCanvasIcon" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4422">
                                 <rect key="frame" x="490" y="490" width="90" height="90"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
-                                <state key="normal" image="Images.xcassets/icon_canvas.imageset/canvas_icon.png"/>
+                                <state key="normal" image="canvas_icon.png"/>
+                                <constraints>
+                                    <constraint id="5087" firstItem="4422" firstAttribute="width" constant="90"/>
+                                    <constraint id="5088" firstItem="4422" firstAttribute="height" constant="90"/>
+                                </constraints>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" restorationIdentifier="LabelEnterCanvasCreds" text="Please enter your credentials to access Canvas by Instructure" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4423">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" restorationIdentifier="LabelEnterCanvasCreds" text="Please enter your credentials to access Canvas by Instructure" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4423">
                                 <rect key="frame" x="20" y="78" width="560" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5215" firstItem="4423" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="4985" firstItem="4388" firstAttribute="trailing" secondItem="4420" secondAttribute="trailing"/>
+                            <constraint id="5079" firstItem="4423" firstAttribute="leading" secondItem="4388" secondAttribute="leading" constant="20"/>
+                            <constraint id="5080" firstItem="4423" firstAttribute="top" secondItem="4388" secondAttribute="top" constant="78"/>
+                            <constraint id="5081" firstItem="4388" firstAttribute="trailing" secondItem="4423" secondAttribute="trailing" constant="20"/>
+                            <constraint id="5082" firstItem="4421" firstAttribute="leading" secondItem="4388" secondAttribute="leading" constant="20"/>
+                            <constraint id="5085" firstItem="4388" firstAttribute="trailing" secondItem="4422" secondAttribute="trailing" constant="20"/>
+                            <constraint id="5086" firstItem="4388" firstAttribute="bottom" secondItem="4422" secondAttribute="bottom" constant="20"/>
+                            <constraint id="5089" firstItem="4422" firstAttribute="leading" secondItem="4421" secondAttribute="trailing" constant="78"/>
+                            <constraint id="5216" firstItem="4420" firstAttribute="top" secondItem="4423" secondAttribute="bottom" constant="17"/>
+                            <constraint id="5217" firstItem="4421" firstAttribute="top" secondItem="4420" secondAttribute="bottom" constant="36"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ActivityCanvas" destination="4419" id="name-outlet-4419"/>
@@ -554,86 +653,102 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Student Email:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4508">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student Email:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4508">
                                 <rect key="frame" x="20" y="96" width="120" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5288" firstAttribute="width" constant="120"/>
+                                    <constraint id="5289" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@student.cptc.edu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4509">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@student.cptc.edu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4509">
                                 <rect key="frame" x="148" y="92" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="5292" firstAttribute="width" constant="266"/>
+                                </constraints>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4510">
-                                <rect key="frame" x="49" y="143" width="91" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4510">
+                                <rect key="frame" x="49" y="143" width="83" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5225" firstAttribute="width" constant="83"/>
+                                    <constraint id="5226" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="TextFieldStudentEmailPassword" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4511">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TextFieldStudentEmailPassword" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4511">
                                 <rect key="frame" x="148" y="138" width="266" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                <constraints>
+                                    <constraint id="5338" firstItem="4511" firstAttribute="width" constant="266"/>
+                                </constraints>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Student ID #:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4512">
-                                <rect key="frame" x="20" y="198" width="106" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Student ID #:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4512">
+                                <rect key="frame" x="20" y="223" width="106" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5304" firstItem="4512" firstAttribute="width" constant="106"/>
+                                    <constraint id="5322" firstItem="4512" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="925123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4513">
-                                <rect key="frame" x="148" y="194" width="130" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="925123456" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4513">
+                                <rect key="frame" x="148" y="218" width="130" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="5339" firstItem="4513" firstAttribute="width" constant="130"/>
+                                </constraints>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Canvas Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4514">
-                                <rect key="frame" x="20" y="240" width="144" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Canvas Password:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4514">
+                                <rect key="frame" x="20" y="283" width="144" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5310" firstItem="4514" firstAttribute="width" constant="144"/>
+                                    <constraint id="5323" firstItem="4514" firstAttribute="height" constant="21"/>
+                                </constraints>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4515">
-                                <rect key="frame" x="181" y="236" width="233" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="********" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4515">
+                                <rect key="frame" x="184" y="278" width="233" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint id="5340" firstItem="4515" firstAttribute="width" constant="233"/>
+                                </constraints>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Store map data locally:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4516">
-                                <rect key="frame" x="20" y="329" width="189" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enable notifications:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4522" restorationIdentifier="LabelNotifications">
+                                <rect key="frame" x="20" y="384" width="159" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <constraints>
+                                    <constraint id="5319" firstItem="4522" firstAttribute="height" constant="21"/>
+                                    <constraint id="5324" firstItem="4522" firstAttribute="width" constant="159"/>
+                                </constraints>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4517">
-                                <rect key="frame" x="217" y="324" width="79" height="27"/>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4523" restorationIdentifier="SwitchNotifications" misplaced="YES">
+                                <rect key="frame" x="242" y="381" width="79" height="27"/>
+                                <constraints>
+                                    <constraint id="5333" firstItem="4523" firstAttribute="width" constant="79"/>
+                                    <constraint id="5334" firstItem="4523" firstAttribute="height" constant="27"/>
+                                </constraints>
                             </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Enable CPTC theme:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4518">
-                                <rect key="frame" x="20" y="376" width="173" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4519">
-                                <rect key="frame" x="217" y="371" width="79" height="27"/>
-                            </switch>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Enable notifications:" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="4522">
-                                <rect key="frame" x="20" y="423" width="159" height="21"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4523">
-                                <rect key="frame" x="217" y="418" width="79" height="27"/>
-                            </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4525">
-                                <rect key="frame" x="20" y="492" width="560" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4525">
+                                <rect key="frame" x="20" y="477" width="560" height="45"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Save">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -641,6 +756,37 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="5223" firstItem="4510" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="49"/>
+                            <constraint id="5235" firstItem="4428" firstAttribute="trailing" secondItem="4511" secondAttribute="trailing" constant="186"/>
+                            <constraint id="5238" firstItem="4511" firstAttribute="leading" secondItem="4510" secondAttribute="trailing" constant="16"/>
+                            <constraint id="5286" firstItem="4508" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="20"/>
+                            <constraint id="5287" firstItem="4508" firstAttribute="top" secondItem="4428" secondAttribute="top" constant="96"/>
+                            <constraint id="5290" firstItem="4509" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="148"/>
+                            <constraint id="5291" firstItem="4509" firstAttribute="top" secondItem="4428" secondAttribute="top" constant="92"/>
+                            <constraint id="5293" firstItem="4428" firstAttribute="trailing" secondItem="4509" secondAttribute="trailing" constant="186"/>
+                            <constraint id="5294" firstItem="4511" firstAttribute="top" secondItem="4509" secondAttribute="bottom" constant="16"/>
+                            <constraint id="5295" firstItem="4510" firstAttribute="top" secondItem="4508" secondAttribute="bottom" constant="26"/>
+                            <constraint id="5302" firstItem="4512" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="20"/>
+                            <constraint id="5303" firstItem="4512" firstAttribute="top" secondItem="4510" secondAttribute="bottom" constant="59"/>
+                            <constraint id="5305" firstItem="4513" firstAttribute="leading" secondItem="4512" secondAttribute="trailing" constant="22"/>
+                            <constraint id="5306" firstItem="4513" firstAttribute="top" secondItem="4428" secondAttribute="top" constant="218"/>
+                            <constraint id="5307" firstItem="4428" firstAttribute="trailing" secondItem="4513" secondAttribute="trailing" constant="322"/>
+                            <constraint id="5308" firstItem="4514" firstAttribute="top" secondItem="4512" secondAttribute="bottom" constant="39"/>
+                            <constraint id="5309" firstItem="4514" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="20"/>
+                            <constraint id="5311" firstItem="4515" firstAttribute="leading" secondItem="4514" secondAttribute="trailing" constant="20"/>
+                            <constraint id="5312" firstItem="4515" firstAttribute="top" secondItem="4513" secondAttribute="bottom" constant="30"/>
+                            <constraint id="5313" firstItem="4428" firstAttribute="trailing" secondItem="4515" secondAttribute="trailing" constant="183"/>
+                            <constraint id="5314" firstItem="4522" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="20"/>
+                            <constraint id="5315" firstItem="4525" firstAttribute="top" secondItem="4522" secondAttribute="bottom" constant="72"/>
+                            <constraint id="5316" firstItem="4428" firstAttribute="bottom" secondItem="4525" secondAttribute="bottom" constant="78"/>
+                            <constraint id="5317" firstItem="4525" firstAttribute="leading" secondItem="4428" secondAttribute="leading" constant="20"/>
+                            <constraint id="5318" firstItem="4428" firstAttribute="trailing" secondItem="4525" secondAttribute="trailing" constant="20"/>
+                            <constraint id="5320" firstItem="4522" firstAttribute="top" secondItem="4514" secondAttribute="bottom" constant="80"/>
+                            <constraint id="5331" firstItem="4523" firstAttribute="leading" secondItem="4522" secondAttribute="trailing" constant="63"/>
+                            <constraint id="5332" firstItem="4525" firstAttribute="top" secondItem="4523" secondAttribute="bottom" constant="69"/>
+                            <constraint id="5337" firstItem="4513" firstAttribute="top" secondItem="4511" secondAttribute="bottom" constant="50"/>
+                        </constraints>
                     </view>
                     <toolbarItems>
                         <barButtonItem title="Reset Settings" id="4503"/>
@@ -651,7 +797,6 @@
                         <outlet property="BarButtonReset" destination="4503" id="name-outlet-4503"/>
                         <outlet property="LabelCanvasPassword" destination="4514" id="name-outlet-4514"/>
                         <outlet property="LabelSid" destination="4512" id="name-outlet-4512"/>
-                        <outlet property="LabelStoreMapData" destination="4516" id="name-outlet-4516"/>
                         <outlet property="LabelStudentEmail" destination="4508" id="name-outlet-4508"/>
                         <outlet property="LabelStudentEmailPassword" destination="4510" id="name-outlet-4510"/>
                         <outlet property="SettingsView" destination="4428" id="name-outlet-4428"/>
@@ -659,6 +804,8 @@
                         <outlet property="TextFieldSid" destination="4513" id="name-outlet-4513"/>
                         <outlet property="TextFieldStudentEmail" destination="4509" id="name-outlet-4509"/>
                         <outlet property="TextFieldStudentEmailPassword" destination="4511" id="name-outlet-4511"/>
+                        <outlet property="SwitchNotifications" destination="4523" id="name-outlet-4523"/>
+                        <outlet property="LabelNotifications" destination="4522" id="name-outlet-4522"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4429" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -697,7 +844,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4760">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4760">
                                 <rect key="frame" x="0.0" y="67" width="600" height="483"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -726,9 +873,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <constraints>
+                                    <constraint id="5043" firstAttribute="width" constant="600"/>
+                                    <constraint id="5044" firstAttribute="height" constant="483"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="5041" firstItem="4661" firstAttribute="trailing" secondItem="4760" secondAttribute="trailing"/>
+                            <constraint id="5042" firstItem="4661" firstAttribute="bottom" secondItem="4760" secondAttribute="bottom" constant="50"/>
+                            <constraint id="5156" firstItem="4760" firstAttribute="top" secondItem="4661" secondAttribute="top" constant="67"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="General Info" id="4662"/>
                     <connections>
@@ -752,7 +908,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4753">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4753">
                                 <rect key="frame" x="0.0" y="66" width="600" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -781,9 +937,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <constraints>
+                                    <constraint id="5047" firstAttribute="width" constant="600"/>
+                                    <constraint id="5048" firstAttribute="height" constant="484"/>
+                                </constraints>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint id="5045" firstItem="4665" firstAttribute="trailing" secondItem="4753" secondAttribute="trailing"/>
+                            <constraint id="5046" firstItem="4665" firstAttribute="bottom" secondItem="4753" secondAttribute="bottom" constant="50"/>
+                            <constraint id="5155" firstItem="4753" firstAttribute="top" secondItem="4665" secondAttribute="top" constant="66"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Programs" selectedImage="icon_programs" id="4666"/>
                     <connections>
