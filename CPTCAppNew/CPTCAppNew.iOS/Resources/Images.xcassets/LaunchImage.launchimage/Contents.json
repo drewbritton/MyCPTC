@@ -4,6 +4,7 @@
       "minimum-system-version": "8.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPhoneRetina55portrait.png",
       "size": "414x736",
       "subtype": "736h",
       "scale": "3x",
@@ -13,6 +14,7 @@
       "minimum-system-version": "8.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPhoneRetina47portrait.png",
       "size": "375x667",
       "subtype": "667h",
       "scale": "2x",
@@ -22,6 +24,7 @@
       "minimum-system-version": "8.0",
       "orientation": "landscape",
       "extent": "full-screen",
+      "filename": "iPhoneRetina55landscape.png",
       "size": "736x414",
       "subtype": "736h",
       "scale": "3x",
@@ -31,6 +34,7 @@
       "minimum-system-version": "9.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPadProportrait.png",
       "size": "1024x1366",
       "scale": "2x",
       "idiom": "ipad"
@@ -39,6 +43,7 @@
       "minimum-system-version": "9.0",
       "orientation": "landscape",
       "extent": "full-screen",
+      "filename": "iPadProlandscape.png",
       "size": "1366x1024",
       "scale": "2x",
       "idiom": "ipad"
@@ -47,6 +52,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPhone2xportrait.png",
       "size": "320x480",
       "scale": "2x",
       "idiom": "iphone"
@@ -55,6 +61,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPhoneRetina4portrait.png",
       "size": "320x568",
       "subtype": "retina4",
       "scale": "2x",
@@ -64,6 +71,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPadportrait.png",
       "size": "768x1024",
       "scale": "1x",
       "idiom": "ipad"
@@ -72,6 +80,7 @@
       "minimum-system-version": "7.0",
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPadRetinaportrait.png",
       "size": "768x1024",
       "scale": "2x",
       "idiom": "ipad"
@@ -80,6 +89,7 @@
       "minimum-system-version": "7.0",
       "orientation": "landscape",
       "extent": "full-screen",
+      "filename": "iPadlandscape.png",
       "size": "1024x768",
       "scale": "1x",
       "idiom": "ipad"
@@ -88,6 +98,7 @@
       "minimum-system-version": "7.0",
       "orientation": "landscape",
       "extent": "full-screen",
+      "filename": "iPadRetinalandscape.png",
       "size": "1024x768",
       "scale": "2x",
       "idiom": "ipad"
@@ -95,6 +106,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPhone1xportrait.png",
       "size": "320x480",
       "scale": "1x",
       "idiom": "iphone"
@@ -102,6 +114,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPhone2xiOS5portrait.png",
       "size": "320x480",
       "scale": "2x",
       "idiom": "iphone"
@@ -109,7 +122,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
-      "filename": "Default-568h@2x.png",
+      "filename": "iPhoneRetina4portraitiOS5.png",
       "size": "320x568",
       "subtype": "retina4",
       "scale": "2x",
@@ -118,6 +131,7 @@
     {
       "orientation": "portrait",
       "extent": "to-status-bar",
+      "filename": "iPadwithoutstatus1xportrait.png",
       "size": "768x1004",
       "scale": "1x",
       "idiom": "ipad"
@@ -125,6 +139,7 @@
     {
       "orientation": "portrait",
       "extent": "to-status-bar",
+      "filename": "iPadwithoutstatus2xportrait.png",
       "size": "768x1004",
       "scale": "2x",
       "idiom": "ipad"
@@ -132,6 +147,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPadportraitiOS5.png",
       "size": "768x1024",
       "scale": "1x",
       "idiom": "ipad"
@@ -139,6 +155,7 @@
     {
       "orientation": "portrait",
       "extent": "full-screen",
+      "filename": "iPadRetinaportraitiOS5.png",
       "size": "768x1024",
       "scale": "2x",
       "idiom": "ipad"
@@ -146,6 +163,7 @@
     {
       "orientation": "landscape",
       "extent": "to-status-bar",
+      "filename": "iPadwithoutstatus1xlandscape.png",
       "size": "1024x748",
       "scale": "1x",
       "idiom": "ipad"
@@ -153,6 +171,7 @@
     {
       "orientation": "landscape",
       "extent": "to-status-bar",
+      "filename": "iPadwithoutstatus2xlandscape.png",
       "size": "1024x748",
       "scale": "2x",
       "idiom": "ipad"
@@ -160,6 +179,7 @@
     {
       "orientation": "landscape",
       "extent": "full-screen",
+      "filename": "iPad1xlandscape.png",
       "size": "1024x768",
       "scale": "1x",
       "idiom": "ipad"
@@ -167,6 +187,7 @@
     {
       "orientation": "landscape",
       "extent": "full-screen",
+      "filename": "iPad2xlandscape.png",
       "size": "1024x768",
       "scale": "2x",
       "idiom": "ipad"

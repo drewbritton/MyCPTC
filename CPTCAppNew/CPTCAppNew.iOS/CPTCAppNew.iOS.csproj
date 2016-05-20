@@ -271,6 +271,28 @@
     <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%402x.png" />
     <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%403x.png" />
     <ImageAsset Include="Resources\Images.xcassets\simon.imageset\simonfull.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina55portrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina47portrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina55landscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadProportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadProlandscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhone2xportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina4portrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadRetinaportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadlandscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadRetinalandscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhone1xportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhone2xiOS5portrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina4portraitiOS5.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus1xportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus2xportrait.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadportraitiOS5.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadRetinaportraitiOS5.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus1xlandscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus2xlandscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPad1xlandscape.png" />
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPad2xlandscape.png" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="Resources\ITunesArtwork" />
@@ -279,6 +301,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -327,6 +350,10 @@
     <Compile Include="ProgramsInfoViewController.cs" />
     <Compile Include="ProgramsInfoViewController.designer.cs">
       <DependentUpon>ProgramsInfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaunchViewController.cs" />
+    <Compile Include="LaunchViewController.designer.cs">
+      <DependentUpon>LaunchViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
