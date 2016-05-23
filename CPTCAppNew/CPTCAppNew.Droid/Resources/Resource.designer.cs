@@ -9,8 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using Android.Views;
-
 [assembly: global::Android.Runtime.ResourceDesignerAttribute("CPTCAppNew.Droid.Resource", IsApplication=true)]
 
 namespace CPTCAppNew.Droid
@@ -86,9 +84,11 @@ namespace CPTCAppNew.Droid
 			
 			// aapt resource value: 0x7f030000
 			public const int Main = 2130903040;
-            internal static View map;
-
-            static Layout()
+			
+			// aapt resource value: 0x7f030001
+			public const int Map = 2130903041;
+			
+			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}

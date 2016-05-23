@@ -21,7 +21,7 @@ namespace CPTCAppNew.Droid
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.map);
+            SetContentView(Resource.Layout.Map);
 
             var imageBitmap = getImageBitmapFromUrl("http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg");
             ImageView imagen = FindViewById<ImageView>(Resource.Id.map);
