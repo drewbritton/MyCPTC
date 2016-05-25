@@ -63,11 +63,11 @@ namespace CPTCAppNew.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int map = 2131099649;
-			
 			// aapt resource value: 0x7f060000
-			public const int myButton = 2131099648;
+			public const int map = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int settings = 2131099649;
 			
 			static Id()
 			{
@@ -88,6 +88,9 @@ namespace CPTCAppNew.Droid
 			// aapt resource value: 0x7f030001
 			public const int Map = 2130903041;
 			
+			// aapt resource value: 0x7f030002
+			public const int Settings = 2130903042;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -101,11 +104,14 @@ namespace CPTCAppNew.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7f040002
+			public const int app_name = 2130968578;
 			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int map = 2130968576;
+			
+			// aapt resource value: 0x7f040001
+			public const int settings = 2130968577;
 			
 			static String()
 			{

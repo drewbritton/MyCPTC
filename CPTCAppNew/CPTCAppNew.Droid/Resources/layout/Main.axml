@@ -4,13 +4,33 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <Button
-        android:id="@+id/myButton"
+        android:id="@+id/map"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
+        android:text="@string/map" />
+    <Button
+        android:text="@string/settings"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/map" />
+        android:id="@+id/settings" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4" />
 </LinearLayout>

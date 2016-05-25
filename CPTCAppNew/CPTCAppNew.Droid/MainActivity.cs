@@ -30,11 +30,15 @@ namespace CPTCAppNew.Droid
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            Button button = FindViewById<Button>(Resource.Id.myButton);
-            
-            button.Click += delegate
+            Button map = FindViewById<Button>(Resource.Id.map);            
+            map.Click += delegate
             {
                 StartActivity(typeof(Map));
+            };
+            Button settings = FindViewById<Button>(Resource.Id.settings);
+            map.Click += delegate
+            {
+                StartActivity(typeof(Settings));
             };
         }
 
