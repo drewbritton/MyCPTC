@@ -58,8 +58,12 @@ namespace CPTCAppNew.iOS {
 		public static UIImage FromUrl (string uri)
 		{
 			using (NSUrl url = new NSUrl (uri))
-			using (NSData data = NSData.FromUrl(url))
+			using (NSData data = NSData.FromUrl (url)) {
+				if (data == null) {
+					return new UIImage ();
+				}
 				return UIImage.LoadFromData (data);
+			}
 		}
 
         // calculates the latitude coord(s) in miles
