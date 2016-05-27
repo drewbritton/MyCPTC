@@ -1,14 +1,76 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<Button  
-    android:id="@+id/myButton"
-    android:layout_width="match_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView xmlns:tools="http://schemas.android.com/tools"
+                android:src="@drawable/cptcmountain2x"
+                android:layout_width="match_parent"
+                android:layout_height="140dip"
+                android:id="@+id/imageView1"
+                android:scaleType="fitCenter"
+                android:cropToPadding="false"
+                android:adjustViewBounds="true"
+                tools:visibility="visible"
+                android:padding="5px"
+                android:minHeight="70dip"
+                android:maxHeight="90dip"
+                android:visibility="visible" />
+            <TextView
+                android:text="MyCPTC"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textAlignment="center"
+                android:editable="false"
+                android:enabled="true"
+                android:singleLine="true"
+                android:visibility="visible"
+                android:textIsSelectable="false"
+                android:layout_gravity="center"
+                android:paddingLeft="160px" />
+            <Button
+                android:text="Information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:drawableLeft="@drawable/info2x"
+                android:textSize="11pt"
+                android:fadingEdge="none"
+                android:textColor="@android:color/holo_green_light" />
+            <Button
+                android:text="Map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2" />
+            <Button
+                android:text="Events"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3" />
+            <Button
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4" />
+            <Button
+                android:text="Canvas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5" />
+            <Button
+                android:text="Settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
-

@@ -19,7 +19,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
-    <MtouchArch>i386</MtouchArch>
+    <MtouchArch>i386, x86_64</MtouchArch>
     <MtouchLink>None</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
     <MtouchProfiling>true</MtouchProfiling>
@@ -254,24 +254,126 @@
     <ImageAsset Include="Resources\Images.xcassets\simon_full.imageset\simonfull.png">
       <InProject>false</InProject>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\canvas_icon%401x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\canvas_icon%402x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\canvas_icon%403x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\cptcmountain%401x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\cptcmountain%402x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\cptcmountain%403x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\cptc_small.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\cptc_small.imageset\logo.png" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_canvas.imageset\icon_canvas%401x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_canvas.imageset\icon_canvas%402x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_canvas.imageset\icon_canvas%403x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\Contents.json" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%401x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%402x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%403x.png" />
-    <ImageAsset Include="Resources\Images.xcassets\simon.imageset\simonfull.png" />
+    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\canvas_icon%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\canvas_icon%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\canvas_icon%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\canvas_icon.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\cptcmountain%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\cptcmountain%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\cptc_mountain.imageset\cptcmountain%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\cptc_small.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\cptc_small.imageset\logo.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_canvas.imageset\icon_canvas%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_canvas.imageset\icon_canvas%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_canvas.imageset\icon_canvas%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%401x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%402x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\icon_simon.imageset\simon%403x.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\simon.imageset\simonfull.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina55portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina47portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina55landscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadProportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadProlandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhone2xportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina4portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadRetinaportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadlandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadRetinalandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhone1xportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhone2xiOS5portrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPhoneRetina4portraitiOS5.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus1xportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus2xportrait.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadportraitiOS5.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadRetinaportraitiOS5.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus1xlandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPadwithoutstatus2xlandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPad1xlandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Images.xcassets\LaunchImage.launchimage\iPad2xlandscape.png">
+      <InProject>false</InProject>
+    </ImageAsset>
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="Resources\ITunesArtwork" />
@@ -280,6 +382,7 @@
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -328,6 +431,10 @@
     <Compile Include="ProgramsInfoViewController.cs" />
     <Compile Include="ProgramsInfoViewController.designer.cs">
       <DependentUpon>ProgramsInfoViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaunchViewController.cs" />
+    <Compile Include="LaunchViewController.designer.cs">
+      <DependentUpon>LaunchViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
