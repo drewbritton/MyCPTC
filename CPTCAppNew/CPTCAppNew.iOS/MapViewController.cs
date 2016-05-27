@@ -4,6 +4,13 @@ using MapKit;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
+using System.Net;
+using System.Drawing;
+using System.Threading.Tasks;
+using System.Net.Http;
+using System.IO;
+using System.Text;
+
 
 namespace CPTCAppNew.iOS {
 
@@ -19,9 +26,17 @@ namespace CPTCAppNew.iOS {
             base.ViewDidLoad();
 
             // adjust the map view to fit in the device's viewport
-            MapViewLakewood.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
-            View.AddSubview(MapViewLakewood);
+            //MapViewLakewood.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
+            //View.AddSubview(MapViewLakewood);
 
+			//Adds campus map from image url
+			String url = "http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg";
+
+			MapImageView.Image = FromUrl (url);
+			View.AddSubview (MapImageView);
+
+
+			/*
             // coordinates for CPTC Lakewood campus
             CLLocationCoordinate2D coords = new CLLocationCoordinate2D(47.1760978, -122.4979392);  // latitude, longitude
 
@@ -30,6 +45,7 @@ namespace CPTCAppNew.iOS {
 
             // set Region
             MapViewLakewood.Region = new MKCoordinateRegion(coords, viewSpan);
+			*/
 
         }
 
@@ -38,6 +54,13 @@ namespace CPTCAppNew.iOS {
             base.DidReceiveMemoryWarning();
 
         }
+
+		public static UIImage FromUrl (string uri)
+		{
+			using (NSUrl url = new NSUrl (uri))
+			using (NSData data = NSData.FromUrl(url))
+				return UIImage.LoadFromData (data);
+		}
 
         // calculates the latitude coord(s) in miles
         public double MilesToLatitudeDegrees(double miles) {
