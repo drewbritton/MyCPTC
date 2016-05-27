@@ -68,6 +68,7 @@
     <Reference Include="Cirrious.FluentLayouts.Touch">
       <HintPath>..\..\packages\Cirrious.FluentLayout.2.5.0\lib\Xamarin.iOS10\Cirrious.FluentLayouts.Touch.dll</HintPath>
     </Reference>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CPTCAppNew\CPTCAppNew.csproj">
