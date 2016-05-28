@@ -436,6 +436,7 @@
     <Compile Include="LaunchViewController.designer.cs">
       <DependentUpon>LaunchViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventsTableSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -573,4 +574,13 @@
   <ItemGroup>
     <BundleResource Include="Resources\simonfull.png" />
   </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <StandardHeader Text="===========================================&#xA;MyCPTC Mobile App   version 1.0a&#xA;Created by: Chris Rocks, Drew Britton, Kevin Osenton&#xA;Internship, Spring 2016&#xA;&#xA;Owned by Clover Park Technical College&#xA;===========================================&#xA;" IncludeInNewFiles="True" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
 </Project>
