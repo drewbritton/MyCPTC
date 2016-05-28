@@ -16,7 +16,7 @@ namespace CPTCAppNew.iOS {
 
 			// sets cell data for the mini Events table view on the launch screen
 			string[] eventsData = {"Jun 20: Finals Week", "Jun 24: Last Day of Spring qtr",
-									"July 5: First Day of Summer qtr", "July 8th: Summer BBQ"};
+									"Jul 5: First Day of Summer qtr", "Jul 8th: Summer BBQ"};
 			
 			// TableViewEvents is the table view at the bottom of the launch screen
 			TableViewEvents.Source = new EventsTableSource(eventsData);

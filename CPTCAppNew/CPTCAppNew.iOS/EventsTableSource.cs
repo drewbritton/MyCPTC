@@ -38,7 +38,7 @@ namespace CPTCAppNew.iOS {
 
 		public override void RowSelected(UITableView tableView, Foundation.NSIndexPath indexPath) {
 			UIAlertController okAlertController = UIAlertController.Create("Event info: ", TableItems[indexPath.Row], UIAlertControllerStyle.Alert);
-			okAlertController.AddAction(UIAlertController.Create("OK", UIAlertActionStyle.Default, null));
+			okAlertController.AddAction(UIAlertAction.Create("OK", UIAlertActionStyle.Default, null));
 
 			tableView.DeselectRow(indexPath, true);
 		}

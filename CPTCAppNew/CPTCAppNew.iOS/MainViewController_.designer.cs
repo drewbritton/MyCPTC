@@ -70,10 +70,6 @@ namespace CPTCAppNew.iOS
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITableView TableViewEvents { get; set; }
 
-		[Action ("ButtonInfo_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void ButtonInfo_TouchUpInside (UIButton sender);
-
 		void ReleaseDesignerOutlets ()
 		{
 			if (ButtonCanvas != null) {
