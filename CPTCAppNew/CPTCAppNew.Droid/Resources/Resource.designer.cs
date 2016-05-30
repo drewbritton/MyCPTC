@@ -41,138 +41,32 @@ namespace CPTCAppNew.Droid
 			}
 		}
 		
-		public partial class Drawable
-		{
-			
-			// aapt resource value: 0x7f020000
-			public const int canvas1x = 2130837504;
-			
-			// aapt resource value: 0x7f020001
-			public const int canvas2x = 2130837505;
-			
-			// aapt resource value: 0x7f020002
-			public const int canvas3x = 2130837506;
-			
-			// aapt resource value: 0x7f020003
-			public const int cptcmountain1x = 2130837507;
-			
-			// aapt resource value: 0x7f020004
-			public const int cptcmountain2x = 2130837508;
-			
-			// aapt resource value: 0x7f020005
-			public const int cptcmountain3x = 2130837509;
-			
-			// aapt resource value: 0x7f020006
-			public const int email1x = 2130837510;
-			
-			// aapt resource value: 0x7f020007
-			public const int email2x = 2130837511;
-			
-			// aapt resource value: 0x7f020008
-			public const int events1x = 2130837512;
-			
-			// aapt resource value: 0x7f020009
-			public const int events2x = 2130837513;
-			
-			// aapt resource value: 0x7f02000a
-			public const int events3x = 2130837514;
-			
-			// aapt resource value: 0x7f02000b
-			public const int iconcanvas1x = 2130837515;
-			
-			// aapt resource value: 0x7f02000c
-			public const int iconcanvas2x = 2130837516;
-			
-			// aapt resource value: 0x7f02000d
-			public const int iconcanvas3x = 2130837517;
-			
-			// aapt resource value: 0x7f02000e
-			public const int info1x = 2130837518;
-			
-			// aapt resource value: 0x7f02000f
-			public const int info2x = 2130837519;
-			
-			// aapt resource value: 0x7f020010
-			public const int info3x = 2130837520;
-			
-			// aapt resource value: 0x7f020011
-			public const int logo = 2130837521;
-			
-			// aapt resource value: 0x7f020012
-			public const int map1x = 2130837522;
-			
-			// aapt resource value: 0x7f020013
-			public const int map2x = 2130837523;
-			
-			// aapt resource value: 0x7f020014
-			public const int map3x = 2130837524;
-			
-			// aapt resource value: 0x7f020015
-			public const int programs1x = 2130837525;
-			
-			// aapt resource value: 0x7f020016
-			public const int programs2x = 2130837526;
-			
-			// aapt resource value: 0x7f020017
-			public const int programs3x = 2130837527;
-			
-			// aapt resource value: 0x7f020018
-			public const int settings1x = 2130837528;
-			
-			// aapt resource value: 0x7f020019
-			public const int settings2x = 2130837529;
-			
-			// aapt resource value: 0x7f02001a
-			public const int settings3x = 2130837530;
-			
-			// aapt resource value: 0x7f02001b
-			public const int simon1x = 2130837531;
-			
-			// aapt resource value: 0x7f02001c
-			public const int simon2x = 2130837532;
-			
-			// aapt resource value: 0x7f02001d
-			public const int simon3x = 2130837533;
-			
-			// aapt resource value: 0x7f02001e
-			public const int simonfull = 2130837534;
-			
-			static Drawable()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Drawable()
-			{
-			}
-		}
-		
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int button1 = 2131034114;
+			// aapt resource value: 0x7f040002
+			public const int button1 = 2130968578;
 			
-			// aapt resource value: 0x7f050003
-			public const int button2 = 2131034115;
+			// aapt resource value: 0x7f040003
+			public const int button2 = 2130968579;
 			
-			// aapt resource value: 0x7f050004
-			public const int button3 = 2131034116;
+			// aapt resource value: 0x7f040004
+			public const int button3 = 2130968580;
 			
-			// aapt resource value: 0x7f050005
-			public const int button4 = 2131034117;
+			// aapt resource value: 0x7f040005
+			public const int button4 = 2130968581;
 			
-			// aapt resource value: 0x7f050006
-			public const int button5 = 2131034118;
+			// aapt resource value: 0x7f040006
+			public const int button5 = 2130968582;
 			
-			// aapt resource value: 0x7f050007
-			public const int button6 = 2131034119;
+			// aapt resource value: 0x7f040007
+			public const int button6 = 2130968583;
 			
-			// aapt resource value: 0x7f050000
-			public const int imageView1 = 2131034112;
+			// aapt resource value: 0x7f040000
+			public const int imageView1 = 2130968576;
 			
-			// aapt resource value: 0x7f050001
-			public const int textView1 = 2131034113;
+			// aapt resource value: 0x7f040001
+			public const int textView1 = 2130968577;
 			
 			static Id()
 			{
@@ -187,8 +81,8 @@ namespace CPTCAppNew.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			// aapt resource value: 0x7f020000
+			public const int Main = 2130837504;
 			
 			static Layout()
 			{
@@ -203,11 +97,11 @@ namespace CPTCAppNew.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
+			// aapt resource value: 0x7f030001
+			public const int app_name = 2130903041;
 			
-			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			// aapt resource value: 0x7f030000
+			public const int hello = 2130903040;
 			
 			static String()
 			{

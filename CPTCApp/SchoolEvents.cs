@@ -9,7 +9,7 @@ namespace CPTCAppNew {
 	/// populate table views within the CPTC mobile app. Each
 	/// property gets its data from an ASP.NET Web service.
 	/// </summary>
-	public class Events {
+	public class SchoolEvents {
 
 		public int Id { get; set; }
 		public string Name { get; set; }
