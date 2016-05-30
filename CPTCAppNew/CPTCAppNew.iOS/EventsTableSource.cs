@@ -1,12 +1,4 @@
-﻿// ===========================================
-// MyCPTC Mobile App   version 1.0a
-// Created by: Chris Rocks, Drew Britton, Kevin Osenton
-// Internship, Spring 2016
-//
-// Owned by Clover Park Technical College
-// ===========================================
-//
-using System;
+﻿using System;
 using UIKit;
 using Foundation;
 
