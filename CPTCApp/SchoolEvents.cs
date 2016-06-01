@@ -5,7 +5,7 @@ using System.Linq;
 namespace CPTCAppNew {
 
 	/// <summary>
-	/// Represents an Events object primarily used to
+	/// Represents a SchoolEvents object primarily used to
 	/// populate table views within the CPTC mobile app. Each
 	/// property gets its data from an ASP.NET Web service.
 	/// </summary>
