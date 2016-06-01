@@ -15,7 +15,7 @@ namespace CPTCAppNew {
 		public string Name { get; set; }
 		public DateTime DateOfEvent { get; set; }
 		public string Description { get; set; }
-		public decimal PriceOfAdmission { get; set; }
+		public double? PriceOfAdmission { get; set; }
 
 	}
 }
