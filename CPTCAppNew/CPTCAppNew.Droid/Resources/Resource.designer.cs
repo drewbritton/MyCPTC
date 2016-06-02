@@ -47,9 +47,6 @@ namespace CPTCAppNew.Droid
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
-			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
-			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -63,11 +60,23 @@ namespace CPTCAppNew.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int map = 2131099648;
+			// aapt resource value: 0x7f050001
+			public const int button1 = 2131034113;
 			
-			// aapt resource value: 0x7f060001
-			public const int settings = 2131099649;
+			// aapt resource value: 0x7f050002
+			public const int button2 = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int button3 = 2131034115;
+			
+			// aapt resource value: 0x7f050004
+			public const int button4 = 2131034116;
+			
+			// aapt resource value: 0x7f050000
+			public const int map = 2131034112;
+			
+			// aapt resource value: 0x7f050005
+			public const int settings = 2131034117;
 			
 			static Id()
 			{
@@ -104,8 +113,20 @@ namespace CPTCAppNew.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f040003
+			public const int Canvas = 2130968579;
+			
+			// aapt resource value: 0x7f040006
+			public const int Events = 2130968582;
+			
 			// aapt resource value: 0x7f040002
 			public const int app_name = 2130968578;
+			
+			// aapt resource value: 0x7f040004
+			public const int email = 2130968580;
+			
+			// aapt resource value: 0x7f040005
+			public const int info = 2130968581;
 			
 			// aapt resource value: 0x7f040000
 			public const int map = 2130968576;
@@ -119,22 +140,6 @@ namespace CPTCAppNew.Droid
 			}
 			
 			private String()
-			{
-			}
-		}
-		
-		public partial class Style
-		{
-			
-			// aapt resource value: 0x7f050000
-			public const int Mono_Android_Theme_Splash = 2131034112;
-			
-			static Style()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Style()
 			{
 			}
 		}

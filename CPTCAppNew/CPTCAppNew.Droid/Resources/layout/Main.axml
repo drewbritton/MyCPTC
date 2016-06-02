@@ -1,36 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
+    android:background="#719500"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <Button
         android:id="@+id/map"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/map" />
+    <corners
+        android:bottomRightRadius="6dip"
+        android:bottomLeftRadius="180dip"
+        android:topRightRadius="180dip"
+        android:topLeftRadius="180dip" />
+    <solid
+        android:color="#502D7F" />
+<!-- this one is ths color of the Rounded Button -->
     <Button
-        android:text="@string/settings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/settings" />
-    <Button
-        android:text="Button"
+        android:text="@string/Canvas"
+        android:background="#502D7F"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button1" />
     <Button
-        android:text="Button"
+        android:text="@string/info"
+        android:layout_marginTop="5dp"
+        android:background="#502D7F"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button2" />
     <Button
-        android:text="Button"
+        android:text="@string/email"
+        android:background="#502D7F"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button3" />
     <Button
-        android:text="Button"
+        android:text="@string/Events"
+        android:background="#502D7F"
+        android:layout_marginTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button4" />
+    <Button
+        android:text="@string/settings"
+        android:background="#502D7F"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings" />
 </LinearLayout>
