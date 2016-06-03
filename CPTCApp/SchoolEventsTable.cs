@@ -9,7 +9,8 @@ namespace CPTCApp {
 		[PrimaryKey, AutoIncrement]
 		public int Id { get; set; }
 		public string Name { get; set; }
-		public DateTime DateOfEvent { get; set; }
+		public DateTime DateOfEvent { get; set; }  // can't be used in SQLite
+		public string Date { get; set; }  // use this in SQLite db
 		public string Description { get; set; }
 		public double? PriceOfAdmission { get; set; }
 
