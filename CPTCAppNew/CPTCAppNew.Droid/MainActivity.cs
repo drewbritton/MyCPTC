@@ -18,7 +18,7 @@ using Android.Graphics;
 
 namespace CPTCAppNew.Droid
 {
-	[Activity (Label = "CPTCAppNew.Droid", MainLauncher = true, Icon = "@drawable/icon")]
+	[Activity (Label = "CPTCAppNew.Droid", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
 	public class MainActivity : Activity
 	{
 		
@@ -40,7 +40,7 @@ namespace CPTCAppNew.Droid
             {
                 StartActivity(typeof(Settings));
             };
-            ImageButton canvas = FindViewById<ImageButton>(Resource.Id.canvas);
+            ImageButton canvas = FindViewById<ImageButton>(Resource.Id.btn_canvas);
             canvas.Click += delegate
             {
                 StartActivity(typeof(Canvas));

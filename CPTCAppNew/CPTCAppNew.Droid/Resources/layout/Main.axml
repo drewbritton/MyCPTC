@@ -1,64 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:background="@drawable/gradient"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <ImageView
-        android:src="@drawable/logo"
-        android:layout_width="match_parent"
-        android:layout_height="110.0dp"
-        android:id="@+id/imageView1" />
-    <Button
-        android:text="@string/map"
-        android:background="#502D7F"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/map" />
-    <Button
-        android:text="@string/Canvas"
-        android:background="#502D7F"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button1" />
-    <Button
-        android:text="@string/info"
-        android:layout_marginTop="5dp"
-        android:background="#502D7F"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2" />
-    <Button
-        android:text="@string/email"
-        android:background="#502D7F"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3" />
-    <Button
-        android:text="@string/Events"
-        android:background="#502D7F"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button4" />
-    <Button
-        android:text="@string/settings"
-        android:background="#502D7F"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/settings" />
-    <ImageButton
-        android:layout_marginLeft="5dp"
-        android:layout_marginTop="5dp"
-        android:src="@drawable/icon_canvas"
-        android:background="@null"
-        android:layout_width="90.0dp"
-        android:layout_height="90.0dp"
-        android:id="@+id/canvas"
-        android:text="Canvas"
-        android:scaleType="centerCrop" />
-</LinearLayout>
+    android:layout_height="fill_parent"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:screenOrientation="nosensor">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+            <ImageView
+                android:src="@drawable/logo"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/imageView1" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:paddingTop="10dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/btn_canvas"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableTop="@drawable/iconcanvas1x"
+                android:gravity="center"
+                android:onClick="onClickFragment"
+                android:text="Canvas"
+                android:textColor="#502d7f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/map"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableTop="@drawable/map1x"
+                android:gravity="center"
+                android:onClick="onClickFragment"
+                android:text="Campus Map"
+                android:textColor="#502d7f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/email"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableTop="@drawable/email1x"
+                android:gravity="center"
+                android:onClick="onClickFragment"
+                android:text="Student Email"
+                android:textColor="#502d7f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/info"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableTop="@drawable/info1x"
+                android:gravity="center"
+                android:onClick="onClickFragment"
+                android:text="General Info"
+                android:textColor="#502d7f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/events"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableTop="@drawable/events1x"
+                android:gravity="center"
+                android:onClick="onClickFragment"
+                android:text="Events"
+                android:textColor="#502d7f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/settings"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:drawableTop="@drawable/settings1x"
+                android:gravity="center"
+                android:onClick="onClickFragment"
+                android:text="Settings"
+                android:textColor="#502d7f"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
