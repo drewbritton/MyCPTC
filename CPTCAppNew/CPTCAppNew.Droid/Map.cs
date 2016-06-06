@@ -19,31 +19,36 @@ namespace CPTCAppNew.Droid
     [Activity(Label = "Map")]
     public class Map : Activity
     {
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
-
+            base.OnCreate(bundle);
             SetContentView(Resource.Layout.Map);
 
-            var imageBitmap = getImageBitmapFromUrl("http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg");
-            ExportBitmapAsPNG(imageBitmap, "lakewoodMap");
+            var imageBitmap = getImageBitmapFromUrl("http://cptc.edu/sites/default/files/files/south-hill-campus.jpg");
+            //ExportBitmapAsPNG(imageBitmap, "lakewoodMap");
             ImageView imagen = FindViewById<ImageView>(Resource.Id.map);
-            String photoPath = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/lakewoodMap.png";
-            Bitmap bitmap1 = BitmapFactory.DecodeFile(photoPath);
-            imagen.SetImageBitmap(bitmap1);
+            //String photoPath = Android.OS.Environment.ExternalStorageDirectory.AbsolutePath + "/lakewoodMap.png";
+            //Bitmap bitmap1 = BitmapFactory.DecodeFile(photoPath);
+            imagen.SetImageBitmap(imageBitmap);
         }
 
         private Bitmap getImageBitmapFromUrl(string url)
         {
             Bitmap imageBitmap = null;
-
-            using (var webClient = new WebClient())
+            try
             {
-                var imageBytes = webClient.DownloadData(url);
-                if (imageBytes != null && imageBytes.Length > 0)
+                using (var webClient = new WebClient())
                 {
-                    imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+                    var imageBytes = webClient.DownloadData(url);
+                    if (imageBytes != null && imageBytes.Length > 0)
+                    {
+                        imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+                    }
                 }
+            }
+            catch
+            {
+
             }
 
             return imageBitmap;

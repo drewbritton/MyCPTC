@@ -36,47 +36,18 @@ namespace CPTCAppNew.Droid
                 StartActivity(typeof(Map));
             };
             Button settings = FindViewById<Button>(Resource.Id.settings);
-            map.Click += delegate
+            settings.Click += delegate
             {
                 StartActivity(typeof(Settings));
+            };
+            ImageButton canvas = FindViewById<ImageButton>(Resource.Id.canvas);
+            canvas.Click += delegate
+            {
+                StartActivity(typeof(Canvas));
             };
         }
 
 
-
-        //private Bitmap getImageHtml(String url)
-        //{
-
-        //    byte[] imageBytes;
-        //    HttpWebRequest imageRequest = (HttpWebRequest)WebRequest.Create(url);
-        //    WebResponse imageResponse = imageRequest.GetResponse();
-
-        //    Stream responseStream = imageResponse.GetResponseStream();
-
-        //    using (BinaryReader br = new BinaryReader(responseStream))
-        //    {
-        //        imageBytes = br.ReadBytes(500000);
-        //        br.Close();
-        //    }
-        //    responseStream.Close();
-        //    imageResponse.Close();
-
-        //    FileStream fs = new FileStream(Android.OS.Environment.DirectoryPictures, FileMode.Create);
-        //    BinaryWriter bw = new BinaryWriter(fs);
-        //    try
-        //    {
-        //        bw.Write(imageBytes);
-        //        Bitmap newImage = null;
-        //        newImage = (Bitmap)imageBytes;
-        //        return newImage;
-        //    }
-        //    finally
-        //    {
-        //        fs.Close();
-        //        bw.Close();
-                
-        //    }
-        //}
 
 
 
