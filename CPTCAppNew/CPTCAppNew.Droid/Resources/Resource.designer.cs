@@ -87,13 +87,10 @@ namespace CPTCAppNew.Droid
 			public const int map1x = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int monoandroidsplash = 2130837518;
+			public const int programs1x = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int programs1x = 2130837519;
-			
-			// aapt resource value: 0x7f020010
-			public const int settings1x = 2130837520;
+			public const int settings1x = 2130837519;
 			
 			static Drawable()
 			{
@@ -108,44 +105,47 @@ namespace CPTCAppNew.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060001
-			public const int RelativeLayout1 = 2131099649;
+			// aapt resource value: 0x7f050002
+			public const int RelativeLayout1 = 2131034114;
 			
-			// aapt resource value: 0x7f060005
-			public const int btn_canvas = 2131099653;
+			// aapt resource value: 0x7f050006
+			public const int btn_canvas = 2131034118;
 			
-			// aapt resource value: 0x7f060008
-			public const int email = 2131099656;
+			// aapt resource value: 0x7f050009
+			public const int email = 2131034121;
 			
-			// aapt resource value: 0x7f06000b
-			public const int events = 2131099659;
+			// aapt resource value: 0x7f050001
+			public const int emailWebView = 2131034113;
 			
-			// aapt resource value: 0x7f060004
-			public const int imageView1 = 2131099652;
+			// aapt resource value: 0x7f05000c
+			public const int events = 2131034124;
 			
-			// aapt resource value: 0x7f060009
-			public const int info = 2131099657;
+			// aapt resource value: 0x7f050005
+			public const int imageView1 = 2131034117;
 			
-			// aapt resource value: 0x7f060006
-			public const int map = 2131099654;
+			// aapt resource value: 0x7f05000a
+			public const int info = 2131034122;
 			
-			// aapt resource value: 0x7f06000c
-			public const int settings = 2131099660;
+			// aapt resource value: 0x7f050007
+			public const int map = 2131034119;
 			
-			// aapt resource value: 0x7f060002
-			public const int tableLayout1 = 2131099650;
+			// aapt resource value: 0x7f05000d
+			public const int settings = 2131034125;
 			
-			// aapt resource value: 0x7f060003
-			public const int tableRow1 = 2131099651;
+			// aapt resource value: 0x7f050003
+			public const int tableLayout1 = 2131034115;
 			
-			// aapt resource value: 0x7f060007
-			public const int tableRow2 = 2131099655;
+			// aapt resource value: 0x7f050004
+			public const int tableRow1 = 2131034116;
 			
-			// aapt resource value: 0x7f06000a
-			public const int tableRow3 = 2131099658;
+			// aapt resource value: 0x7f050008
+			public const int tableRow2 = 2131034120;
 			
-			// aapt resource value: 0x7f060000
-			public const int webView1 = 2131099648;
+			// aapt resource value: 0x7f05000b
+			public const int tableRow3 = 2131034123;
+			
+			// aapt resource value: 0x7f050000
+			public const int webView1 = 2131034112;
 			
 			static Id()
 			{
@@ -164,13 +164,22 @@ namespace CPTCAppNew.Droid
 			public const int Canvas = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int Main = 2130903041;
+			public const int email = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Map = 2130903042;
+			public const int Events = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Settings = 2130903043;
+			public const int generalinfo = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int Main = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Map = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Settings = 2130903046;
 			
 			static Layout()
 			{
@@ -212,22 +221,6 @@ namespace CPTCAppNew.Droid
 			}
 			
 			private String()
-			{
-			}
-		}
-		
-		public partial class Style
-		{
-			
-			// aapt resource value: 0x7f050000
-			public const int Mono_Android_Theme_Splash = 2131034112;
-			
-			static Style()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Style()
 			{
 			}
 		}

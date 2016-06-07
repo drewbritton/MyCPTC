@@ -57,6 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Canvas.cs" />
+    <Compile Include="Email.cs" />
+    <Compile Include="Events.cs" />
+    <Compile Include="GeneralInfo.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Map.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -74,6 +77,15 @@
       <SubType>AndroidResource</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\Canvas.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\email.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Events.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\generalinfo.axml">
       <SubType>AndroidResource</SubType>
     </AndroidResource>
   </ItemGroup>

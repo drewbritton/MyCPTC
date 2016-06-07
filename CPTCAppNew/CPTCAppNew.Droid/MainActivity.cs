@@ -40,10 +40,20 @@ namespace CPTCAppNew.Droid
             {
                 StartActivity(typeof(Settings));
             };
-            ImageButton canvas = FindViewById<ImageButton>(Resource.Id.btn_canvas);
+            Button canvas = FindViewById<Button>(Resource.Id.btn_canvas);
             canvas.Click += delegate
             {
                 StartActivity(typeof(Canvas));
+            };
+            Button email = FindViewById<Button>(Resource.Id.email);
+            email.Click += delegate
+            {
+                StartActivity(typeof(Email));
+            };
+            Button events = FindViewById<Button>(Resource.Id.events);
+            events.Click += delegate
+            {
+                StartActivity(typeof(Events));
             };
         }
 
