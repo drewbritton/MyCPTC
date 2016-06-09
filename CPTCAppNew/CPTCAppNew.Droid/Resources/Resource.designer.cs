@@ -92,6 +92,9 @@ namespace CPTCAppNew.Droid
 			// aapt resource value: 0x7f02000f
 			public const int settings1x = 2130837519;
 			
+			// aapt resource value: 0x7f020010
+			public const int textstyle = 2130837520;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -111,8 +114,26 @@ namespace CPTCAppNew.Droid
 			// aapt resource value: 0x7f050006
 			public const int btn_canvas = 2131034118;
 			
+			// aapt resource value: 0x7f050013
+			public const int canvasPassword = 2131034131;
+			
+			// aapt resource value: 0x7f050014
+			public const int canvasSave = 2131034132;
+			
+			// aapt resource value: 0x7f050012
+			public const int canvasUserName = 2131034130;
+			
 			// aapt resource value: 0x7f050009
 			public const int email = 2131034121;
+			
+			// aapt resource value: 0x7f050015
+			public const int emailAddress = 2131034133;
+			
+			// aapt resource value: 0x7f050016
+			public const int emailPassword = 2131034134;
+			
+			// aapt resource value: 0x7f050017
+			public const int emailSave = 2131034135;
 			
 			// aapt resource value: 0x7f050001
 			public const int emailWebView = 2131034113;
@@ -129,6 +150,15 @@ namespace CPTCAppNew.Droid
 			// aapt resource value: 0x7f050007
 			public const int map = 2131034119;
 			
+			// aapt resource value: 0x7f05000e
+			public const int radioGroup2 = 2131034126;
+			
+			// aapt resource value: 0x7f050010
+			public const int rbtnLakewood = 2131034128;
+			
+			// aapt resource value: 0x7f05000f
+			public const int rbtnSouthHill = 2131034127;
+			
 			// aapt resource value: 0x7f05000d
 			public const int settings = 2131034125;
 			
@@ -143,6 +173,9 @@ namespace CPTCAppNew.Droid
 			
 			// aapt resource value: 0x7f05000b
 			public const int tableRow3 = 2131034123;
+			
+			// aapt resource value: 0x7f050011
+			public const int textView1 = 2131034129;
 			
 			// aapt resource value: 0x7f050000
 			public const int webView1 = 2131034112;
@@ -164,13 +197,13 @@ namespace CPTCAppNew.Droid
 			public const int Canvas = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int email = 2130903041;
+			public const int EmailLayout = 2130903041;
 			
 			// aapt resource value: 0x7f030002
 			public const int Events = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int generalinfo = 2130903043;
+			public const int info = 2130903043;
 			
 			// aapt resource value: 0x7f030004
 			public const int Main = 2130903044;
@@ -209,11 +242,17 @@ namespace CPTCAppNew.Droid
 			// aapt resource value: 0x7f040005
 			public const int info = 2130968581;
 			
+			// aapt resource value: 0x7f040007
+			public const int lakewood = 2130968583;
+			
 			// aapt resource value: 0x7f040000
 			public const int map = 2130968576;
 			
 			// aapt resource value: 0x7f040001
 			public const int settings = 2130968577;
+			
+			// aapt resource value: 0x7f040008
+			public const int southhill = 2130968584;
 			
 			static String()
 			{

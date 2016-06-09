@@ -18,7 +18,7 @@ namespace CPTCAppNew.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Id.generalinfo);
+            SetContentView(Resource.Layout.info);
 
             // Create your application here
         }

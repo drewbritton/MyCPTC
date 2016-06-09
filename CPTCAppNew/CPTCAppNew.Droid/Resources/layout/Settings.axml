@@ -4,5 +4,109 @@
     android:background="@drawable/gradient"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
     android:minWidth="25px"
-    android:minHeight="25px" />
+    android:minHeight="25px">
+    <RadioGroup
+        android:layout_marginTop="15dp"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup2">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/southhill"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rbtnSouthHill"
+            android:textColor="#502d7f"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lakewood"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rbtnLakewood"
+            android:textColor="#502d7f"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RadioGroup>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="Canvas User Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#502d7f"
+        android:textStyle="bold" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:hint="User Number"
+        android:textColor="#000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle"
+        android:id="@+id/canvasUserName" />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:textColor="#000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle"
+        android:id="@+id/canvasPassword" />
+    <Button
+        android:text="Save"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:id="@+id/canvasSave" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="Student Email Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#502d7f"
+        android:textStyle="bold" />
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:hint="User Number"
+        android:textColor="#000000"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle"
+        android:id="@+id/emailAddress" />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:hint="Password"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textstyle"
+        android:id="@+id/emailPassword" />
+    <Button
+        android:text="Save"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_gravity="right"
+        android:id="@+id/emailSave" />
+</LinearLayout>

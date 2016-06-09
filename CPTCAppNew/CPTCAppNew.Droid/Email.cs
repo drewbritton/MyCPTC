@@ -17,10 +17,10 @@ namespace CPTCAppNew.Droid
     public class Email : Activity
     {
         WebView browser;
-        protected override void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle bundle)
         {
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Id.email);
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.EmailLayout);
             browser = FindViewById<WebView>(Resource.Id.emailWebView);
             browser.Settings.JavaScriptEnabled = true;
             browser.LoadUrl("http://gmail.com");

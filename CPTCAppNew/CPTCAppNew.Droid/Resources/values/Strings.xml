@@ -7,4 +7,6 @@
   <string name="email">Student Email</string>
    <string name="info">General Info</string>
   <string name="Events">Events</string>
+  <string name="lakewood">Lakewood Campus</string>
+  <string name="southhill">South Hill Campus</string>
 </resources>
