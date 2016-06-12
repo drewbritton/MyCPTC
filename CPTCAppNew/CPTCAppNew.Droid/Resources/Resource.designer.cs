@@ -57,7 +57,7 @@ namespace CPTCAppNew.Droid
 			public const int gradient = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Icon = 2130837508;
+			public const int icon = 2130837508;
 			
 			// aapt resource value: 0x7f020005
 			public const int icon_canvas = 2130837509;
