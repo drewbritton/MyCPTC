@@ -19,23 +19,36 @@ namespace CPTCAppNew.Droid
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Settings);
-            EditText username = (EditText)FindViewById(Resource.Id.emailAddress);
-            EditText password = (EditText)FindViewById(Resource.Id.emailPassword);
+            EditText emailUsername = (EditText)FindViewById(Resource.Id.emailAddress);
+            EditText emailPassword = (EditText)FindViewById(Resource.Id.emailPassword);
             Button emailsave = FindViewById<Button>(Resource.Id.emailSave);
             emailsave.Click += delegate
             {
 
-                string saveUserName = username.Text;
-                string savePassword = password.Text;
-                username.Text = "";
-                if (saveUserName != null && savePassword != null)
+                string saveUserName = emailUsername.Text;
+                string savePassword = emailPassword.Text;
+                emailUsername.Text = "";
+                if (emailUsername.Text.Trim().Length > 0 && emailPassword.Text.Trim().Length > 0)
                 {
-                    username.Hint = ("Email Address Saved");
+                    emailUsername.Hint = ("Email Address Saved");
                 }
             };
-            username.Click += delegate
+            EditText canvasUser = (EditText)FindViewById(Resource.Id.canvasUserName);
+            EditText canvasPass = (EditText)FindViewById(Resource.Id.canvasPassword);
+            Button canvasSave = FindViewById<Button>(Resource.Id.canvasSave);
+            canvasSave.Click += delegate
             {
-                username.SetCursorVisible(true);
+
+                string canvasUserName = canvasUser.Text;
+                string canvasPassword = canvasPass.Text;
+                canvasUser.Text = "";
+                if (canvasUser.Text.Trim().Length > 0 && canvasPass.Text.Trim().Length > 0)
+                {
+                    canvasUser.Hint = ("Canvas Login Saved");
+                    Intent canvasIntent = new Intent(this, typeof(Canvas));
+                    canvasIntent.PutExtra("canvasUsername", canvasUserName);
+                    canvasIntent.PutExtra("canvasPassword", canvasPassword);
+                }
             };
         }
     }

@@ -108,9 +108,6 @@ namespace CPTCAppNew.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int RelativeLayout1 = 2131034114;
-			
 			// aapt resource value: 0x7f050006
 			public const int btn_canvas = 2131034118;
 			
@@ -146,6 +143,9 @@ namespace CPTCAppNew.Droid
 			
 			// aapt resource value: 0x7f05000a
 			public const int info = 2131034122;
+			
+			// aapt resource value: 0x7f050002
+			public const int infowebView = 2131034114;
 			
 			// aapt resource value: 0x7f050007
 			public const int map = 2131034119;

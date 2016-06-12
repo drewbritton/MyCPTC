@@ -8,7 +8,7 @@
     android:minHeight="25px">
     <WebView
         android:layout_width="match_parent"
-        android:layout_height="569.0dp"
+        android:layout_height="match_parent"
         android:id="@+id/webView1"
         android:layout_marginTop="0.0dp" />
 </LinearLayout>

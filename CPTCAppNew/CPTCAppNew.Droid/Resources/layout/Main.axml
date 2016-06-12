@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/RelativeLayout1"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/gradient"
-    android:gravity="center"
-    android:screenOrientation="nosensor">
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
     <TableLayout
         android:id="@+id/tableLayout1"
         android:layout_width="fill_parent"
@@ -13,15 +11,20 @@
         <TableRow
             android:id="@+id/tableRow1"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:layout_height="0dp"
-            android:layout_weight="1.5">
+            android:layout_weight="1">
             <ImageView
                 android:src="@drawable/logo"
-                android:layout_width="0dp"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:id="@+id/imageView1" />
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="120dp"
+                android:id="@+id/imageView1"
+                android:maxHeight="120dp"
+                android:minHeight="40dp"
+                android:scaleType="fitCenter"
+                android:scaleX="1"
+                android:scaleY="1" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow1"
@@ -56,7 +59,8 @@
                 android:text="Campus Map"
                 android:textColor="#502d7f"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_column="2" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow2"
@@ -90,7 +94,8 @@
                 android:text="General Info"
                 android:textColor="#502d7f"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_column="2" />
         </TableRow>
         <TableRow
             android:id="@+id/tableRow3"
@@ -124,7 +129,8 @@
                 android:text="Settings"
                 android:textColor="#502d7f"
                 android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:layout_column="2" />
         </TableRow>
     </TableLayout>
-</RelativeLayout>
+</LinearLayout>

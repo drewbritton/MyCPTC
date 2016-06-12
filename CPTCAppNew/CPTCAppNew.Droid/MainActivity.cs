@@ -55,13 +55,19 @@ namespace CPTCAppNew.Droid
             {
                 StartActivity(typeof(Events));
             };
+            Button generalInfo = FindViewById<Button>(Resource.Id.info);
+            generalInfo.Click += delegate
+            {
+                StartActivity(typeof(GeneralInfo));
+            };
         }
+    }
 
 
 
 
 
-	}
+	
 }
 
 

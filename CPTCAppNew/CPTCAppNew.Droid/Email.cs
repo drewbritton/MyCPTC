@@ -10,10 +10,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Webkit;
+using Android.Content.PM;
 
 namespace CPTCAppNew.Droid
 {
-    [Activity(Label = "Email")]
+    [Activity(Label = "Email", ConfigurationChanges = ConfigChanges.Orientation | ConfigChanges.ScreenSize)]
     public class Email : Activity
     {
         WebView browser;
