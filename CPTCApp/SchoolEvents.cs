@@ -17,9 +17,9 @@ namespace CPTCAppNew {
 		public string Description { get; set; }
 		public double? PriceOfAdmission { get; set; }
 
-//		public override string ToString() {
-//			return string.Format("SchoolEvents: Id={0}, Name={1}, DateOfEvent={2}, Description={3}, PriceOfAdmission={4}", Id, Name, DateOfEvent, Description, PriceOfAdmission);
-//		}
+		public override string ToString() {
+			return string.Format("SchoolEvents: Id={0}, Name={1}, DateOfEvent={2}, Description={3}, PriceOfAdmission={4}", Id, Name, DateOfEvent, Description, PriceOfAdmission);
+		}
 
 	}
 }
