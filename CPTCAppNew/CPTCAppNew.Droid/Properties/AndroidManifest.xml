@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-	<uses-sdk android:minSdkVersion="15" />
-	<application></application>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="CPTC.CPTC" android:installLocation="auto">
+	<uses-sdk />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application android:label="@string/app_name">
+    <activity android:name=".Canvas"
+          android:configChanges="orientation|keyboardHidden"
+          android:label="@string/app_name"/>
+  </application>
 </manifest>
