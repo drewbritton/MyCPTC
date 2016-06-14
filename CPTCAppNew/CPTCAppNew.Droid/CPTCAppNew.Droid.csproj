@@ -54,14 +54,14 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CPTCApp\CPTCAppNew.csproj">
+      <Project>{4834ba6a-2cfe-4530-959f-8fc57595b4d6}</Project>
+      <Name>CPTCAppNew</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CPTCAppNew.iOS\CPTCAppNew.iOS.csproj">
       <Project>{f8437848-0dfa-4730-97cd-fe0302e1737d}</Project>
       <Name>CPTCAppNew.iOS</Name>
       <IsAppExtension>false</IsAppExtension>
-    </ProjectReference>
-    <ProjectReference Include="..\CPTCAppNew\CPTCAppNew.csproj">
-      <Name>CPTCAppNew</Name>
-      <Project>{FEF7635D-86DF-4A4B-BFF4-9767ECE508D8}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
