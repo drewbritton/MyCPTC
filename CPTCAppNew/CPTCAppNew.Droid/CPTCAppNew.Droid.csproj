@@ -39,6 +39,10 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Net" />
@@ -50,6 +54,11 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CPTCAppNew.iOS\CPTCAppNew.iOS.csproj">
+      <Project>{f8437848-0dfa-4730-97cd-fe0302e1737d}</Project>
+      <Name>CPTCAppNew.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+    </ProjectReference>
     <ProjectReference Include="..\CPTCAppNew\CPTCAppNew.csproj">
       <Name>CPTCAppNew</Name>
       <Project>{FEF7635D-86DF-4A4B-BFF4-9767ECE508D8}</Project>
@@ -67,6 +76,7 @@
     <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />

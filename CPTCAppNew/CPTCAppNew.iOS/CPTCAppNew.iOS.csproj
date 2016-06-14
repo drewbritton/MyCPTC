@@ -582,10 +582,4 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
-  <ItemGroup>
-    <ProjectReference Include="..\..\CPTCApp\CPTCAppNew.csproj">
-      <Project>{4834BA6A-2CFE-4530-959F-8FC57595B4D6}</Project>
-      <Name>CPTCAppNew</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>

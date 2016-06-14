@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CPTCAppNew;
 
 using Android.App;
 using Android.Content;
@@ -19,6 +20,11 @@ namespace CPTCAppNew.Droid
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.Events);
+            
+            
+            
+            
+            
 
             // Create your application here
         }
