@@ -21,8 +21,8 @@ namespace CPTCAppNew {
         // duration of the app's lifecycle.
         public SchoolEventsRepository() {
             client = new HttpClient();
-            // limit the size of the response to roughly 256kb.
-            client.MaxResponseContentBufferSize = 255999;
+            // limit the size of the response to roughly ***kb.
+            //client.MaxResponseContentBufferSize = 511999;
         }
 
         /// <summary>
@@ -79,13 +79,15 @@ namespace CPTCAppNew {
         /// </summary>
         /// <returns>A List of all SchoolEvents.</returns>
         public async Task<List<SchoolEvents>> GetEventsAsync() {
-            var uri = new Uri(apiUrl);
+			string testUrl = "https://api.github.com/users/octocat";
+            var uri = new Uri(testUrl);
 
             var response = await client.GetStringAsync(uri);
 
-            List<SchoolEvents> jsonResults = JsonConvert.DeserializeObject<List<SchoolEvents>>(response);
+			var results = response.Result;
+            //List<SchoolEvents> jsonResults = JsonConvert.DeserializeObject<List<SchoolEvents>>(response);
 
-            return jsonResults;
+			return new List<SchoolEvents>();
         }
 
     }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UIKit;
 using Foundation;
 
@@ -6,16 +7,26 @@ namespace CPTCAppNew.iOS {
 	
 	public class EventsTableSource : UITableViewSource {
 		string[] TableItems;
+		List<SchoolEvents> TableEvents;
 		string CellIdentifier = "TableCell";
 
 		MainViewController owner;
 		
 		public EventsTableSource(string[] items) {
-			TableItems = items;	    	
+			TableItems = items;    	
 		}
 
 		public EventsTableSource(string[] items, MainViewController owner) {
 			TableItems = items;
+			this.owner = owner;
+		}
+
+		public EventsTableSource(List<SchoolEvents> items) {
+			TableEvents = items;
+		}
+
+		public EventsTableSource(List<SchoolEvents> items, MainViewController owner) {
+			TableEvents = items;
 			this.owner = owner;
 		}
 
