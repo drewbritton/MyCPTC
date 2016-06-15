@@ -435,6 +435,7 @@
       <DependentUpon>LaunchViewController.cs</DependentUpon>
     </Compile>
     <Compile Include="EventsTableSource.cs" />
+    <Compile Include="SchoolEvents.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
@@ -582,4 +583,10 @@
       </Properties>
     </MonoDevelop>
   </ProjectExtensions>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CPTCApp\CPTCAppNew.csproj">
+      <Project>{4834BA6A-2CFE-4530-959F-8FC57595B4D6}</Project>
+      <Name>CPTCAppNew</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

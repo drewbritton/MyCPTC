@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UIKit;
 using Foundation;
+using CPTCAppNew;
 
 namespace CPTCAppNew.iOS {
 	
@@ -9,6 +10,8 @@ namespace CPTCAppNew.iOS {
 		string[] TableItems;
 		List<SchoolEvents> TableEvents;
 		string CellIdentifier = "TableCell";
+
+		CPTCAppNew.SchoolEvents crap = new SchoolEvents();
 
 		MainViewController owner;
 		
@@ -31,7 +34,7 @@ namespace CPTCAppNew.iOS {
 		}
 
 		public override nint RowsInSection(UITableView tableview, nint section) {
-			return TableItems.Length;
+			return TableEvents.Count;
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath) {
@@ -39,6 +42,10 @@ namespace CPTCAppNew.iOS {
 			cell = new UITableViewCell(UITableViewCellStyle.Default, CellIdentifier);
 			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
 			string item = TableItems[indexPath.Row];
+
+			// LEFT OFF HERE!
+			SchoolEvents eventsItem = TableEvents[indexPath.Row];
+			// LEFT OFF HERE!!
 
 			// create a new row (cell) unless one can be recycled
 			if (cell == null)

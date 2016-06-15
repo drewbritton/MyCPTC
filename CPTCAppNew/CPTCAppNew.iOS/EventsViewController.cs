@@ -18,8 +18,10 @@ namespace CPTCAppNew.iOS {
 		public override void ViewDidLoad() {
 			base.ViewDidLoad();
 			EventsTableView = new UITableView(View.Bounds);
-			EventsTableDataSource source = new EventsTableDataSource();
-			List<SchoolEvents> eventsList = source.PopulateTable();
+			//EventsTableDataSource source = new EventsTableDataSource();
+			SchoolEventsRepository source = new SchoolEventsRepository();
+			List<SchoolEvents> eventsList = new List<SchoolEvents>();
+			var events = source.GetEventsAsync();
 
 			EventsTableView.Source = new EventsTableSource(eventsList);
 			Add(EventsTableView);
