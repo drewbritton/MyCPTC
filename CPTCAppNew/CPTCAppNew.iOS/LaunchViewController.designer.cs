@@ -11,19 +11,19 @@ using UIKit;
 
 namespace CPTCAppNew.iOS
 {
-	[Register ("LaunchViewController")]
-	partial class LaunchViewController
-	{
-		[Outlet]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		UIImageView imageLaunchScreen { get; set; }
+    [Register ("LaunchViewController")]
+    partial class LaunchViewController
+    {
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIImageView imageLaunchScreen { get; set; }
 
-		void ReleaseDesignerOutlets ()
-		{
-			if (imageLaunchScreen != null) {
-				imageLaunchScreen.Dispose ();
-				imageLaunchScreen = null;
-			}
-		}
-	}
+        void ReleaseDesignerOutlets ()
+        {
+            if (imageLaunchScreen != null) {
+                imageLaunchScreen.Dispose ();
+                imageLaunchScreen = null;
+            }
+        }
+    }
 }

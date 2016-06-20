@@ -8,10 +8,7 @@ namespace CPTCAppNew.iOS {
 	
 	public class EventsTableSource : UITableViewSource {
 		string[] TableItems;
-		List<SchoolEvents> TableEvents;
 		string CellIdentifier = "TableCell";
-
-		CPTCAppNew.SchoolEvents crap = new SchoolEvents();
 
 		MainViewController owner;
 		
@@ -24,17 +21,8 @@ namespace CPTCAppNew.iOS {
 			this.owner = owner;
 		}
 
-		public EventsTableSource(List<SchoolEvents> items) {
-			TableEvents = items;
-		}
-
-		public EventsTableSource(List<SchoolEvents> items, MainViewController owner) {
-			TableEvents = items;
-			this.owner = owner;
-		}
-
 		public override nint RowsInSection(UITableView tableview, nint section) {
-			return TableEvents.Count;
+			return TableItems.Length;
 		}
 
 		public override UITableViewCell GetCell(UITableView tableView, Foundation.NSIndexPath indexPath) {
@@ -42,10 +30,6 @@ namespace CPTCAppNew.iOS {
 			cell = new UITableViewCell(UITableViewCellStyle.Default, CellIdentifier);
 			cell.Accessory = UITableViewCellAccessory.DisclosureIndicator;
 			string item = TableItems[indexPath.Row];
-
-			// LEFT OFF HERE!
-			SchoolEvents eventsItem = TableEvents[indexPath.Row];
-			// LEFT OFF HERE!!
 
 			// create a new row (cell) unless one can be recycled
 			if (cell == null)

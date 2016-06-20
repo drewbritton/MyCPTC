@@ -15,15 +15,20 @@ namespace CPTCAppNew.iOS {
 			
 		}
 
-		public override void ViewDidLoad() {
+		public async override void ViewDidLoad() {
 			base.ViewDidLoad();
 			EventsTableView = new UITableView(View.Bounds);
 			//EventsTableDataSource source = new EventsTableDataSource();
 			SchoolEventsRepository source = new SchoolEventsRepository();
-			List<SchoolEvents> eventsList = new List<SchoolEvents>();
-			var events = source.GetEventsAsync();
+			List<SchoolEvents> eventsList = await source.GetEventsAsync();
+			string[] eventsArray = new string[eventsList.Count];
 
-			EventsTableView.Source = new EventsTableSource(eventsList);
+			for (int i = 0; i < eventsList.Count; i++) {
+				eventsArray[i] = eventsList[i].Name;
+			}
+
+
+			EventsTableView.Source = new EventsTableSource(eventsArray);
 			Add(EventsTableView);
 		}
 			
