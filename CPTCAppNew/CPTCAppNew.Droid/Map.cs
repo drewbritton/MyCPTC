@@ -16,7 +16,7 @@ using System.IO;
 
 namespace CPTCAppNew.Droid
 {
-    [Activity(Label = "Map")]
+    [Activity(Label = "Map", ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape)]
     public class Map : Activity
     {
         protected override void OnCreate(Bundle bundle)
