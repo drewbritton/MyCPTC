@@ -7,7 +7,7 @@ namespace CPTCAppNew.iOS {
 	
 	partial class CanvasViewController : UIViewController {
 		
-		public CanvasViewController (IntPtr handle) : base (handle) {
+		public CanvasViewController(IntPtr handle) : base(handle) {
 			
 		}
 

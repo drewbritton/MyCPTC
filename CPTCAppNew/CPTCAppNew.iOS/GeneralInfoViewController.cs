@@ -7,7 +7,7 @@ namespace CPTCAppNew.iOS
 {
 	partial class GeneralInfoViewController : UIViewController
 	{
-		public GeneralInfoViewController (IntPtr handle) : base (handle)
+		public GeneralInfoViewController(IntPtr handle) : base(handle)
 		{
 		}
 	}

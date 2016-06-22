@@ -16,7 +16,7 @@ namespace CPTCAppNew.iOS {
 
 	partial class MapViewController : UIViewController {
 
-		public MapViewController (IntPtr handle) : base (handle) {
+		public MapViewController(IntPtr handle) : base(handle) {
 
 		}
 
@@ -26,8 +26,8 @@ namespace CPTCAppNew.iOS {
             base.ViewDidLoad();
 
             // adjust the map view to fit in the device's viewport
-            //MapViewLakewood.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
-            //View.AddSubview(MapViewLakewood);
+            MapViewLakewood.AutoresizingMask = UIViewAutoresizing.FlexibleDimensions;
+            View.AddSubview(MapViewLakewood);
 
 			//Adds campus map from image url
 			String url = "http://www.cptc.edu/sites/default/files/files/Lakewood%20Campus%20Map.jpeg";
@@ -36,7 +36,6 @@ namespace CPTCAppNew.iOS {
 			View.AddSubview (MapImageView);
 
 
-			/*
             // coordinates for CPTC Lakewood campus
             CLLocationCoordinate2D coords = new CLLocationCoordinate2D(47.1760978, -122.4979392);  // latitude, longitude
 
@@ -45,8 +44,6 @@ namespace CPTCAppNew.iOS {
 
             // set Region
             MapViewLakewood.Region = new MKCoordinateRegion(coords, viewSpan);
-			*/
-
         }
 
         // default method to deal with low RAM issues

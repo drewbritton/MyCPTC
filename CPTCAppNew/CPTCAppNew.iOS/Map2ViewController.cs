@@ -9,7 +9,7 @@ namespace CPTCAppNew.iOS {
 
 	partial class Map2ViewController : UIViewController {
 
-		public Map2ViewController (IntPtr handle) : base (handle) {
+		public Map2ViewController(IntPtr handle) : base(handle) {
 
 		}
 

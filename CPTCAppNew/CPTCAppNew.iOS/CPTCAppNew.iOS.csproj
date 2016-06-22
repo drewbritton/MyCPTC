@@ -437,6 +437,8 @@
     <Compile Include="EventsTableSource.cs" />
     <Compile Include="SchoolEvents.cs" />
     <Compile Include="SchoolEventsRepository.cs" />
+    <Compile Include="GetMapImage.cs" />
+    <Compile Include="LoadingOverlay.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
